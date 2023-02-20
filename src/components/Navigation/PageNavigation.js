@@ -145,11 +145,11 @@ const ClosePanel = styled.div`
 `;
 
 const LinkPanel = styled.div`
-  background-color: hsla(180, 25%, 15%, 0.9);
+  background-color: hsla(264, 36%, 22%, 0.8);
 
   backdrop-filter: blur(1rem);
 
-  border-top-left-radius: 40px;
+  border-left: 2px solid var(--off-white);
 
   height: 100%;
   width: 70%;
@@ -219,13 +219,13 @@ const PageNavigation = () => {
     },
     {
       id: 3,
-      text: 'contact',
-      url: '/#contact',
+      text: 'shop',
+      url: '/#shop',
     },
     {
       id: 4,
-      text: 'links',
-      url: '/links',
+      text: 'contact',
+      url: '/contact',
     },
   ];
 
@@ -237,7 +237,7 @@ const PageNavigation = () => {
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <Link to={link.url} activeClassName="selected">
+              <Link to={link.url} activeClassName='selected'>
                 {link.text}
               </Link>
             </li>
@@ -255,11 +255,7 @@ const PageNavigation = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.id}>
-                <Link
-                  to={link.url}
-                  onClick={toggleMenu}
-                  activeClassName="selected"
-                >
+                <Link to={link.url} onClick={toggleMenu} activeClassName='selected'>
                   {link.text}
                 </Link>
               </li>
