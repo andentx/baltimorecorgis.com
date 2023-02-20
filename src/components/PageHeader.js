@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import PageHeaderLogo from './PageHeaderLogo';
-import PageNavigation from './Navigation/PageNavigation';
+import PageHeaderLogo from "./PageHeaderLogo";
+import PageNavigation from "./Navigation/PageNavigation";
 
 const Header = styled.header`
   background-color: var(--page-header-background-color);
@@ -11,7 +11,7 @@ const Header = styled.header`
 
   height: 4rem;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 
   padding: 0.5rem;
 
