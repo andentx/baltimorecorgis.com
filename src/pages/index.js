@@ -18,7 +18,7 @@ export const Head = () => (
 
     <meta name='twitter:card' content='summary' />
 
-    <meta name='theme-color' content='hsl(0, 0%, 0%)' />
+    <meta name='theme-color' content='hsl(264, 36%, 31%)' />
   </>
 );
 
