@@ -66,6 +66,8 @@ const MainContent = styled.main`
   width: 100%;
   max-width: 1200px;
 
+  padding-top: min(5vw, 3rem);
+
   display: flex;
   flex-direction: column;
   align-items: center;
