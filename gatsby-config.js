@@ -19,5 +19,25 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Baltimore Corgis",
+        short_name: "Baltimore Corgis",
+        background_color: "hsl(0, 0%, 0%)",
+        theme_color: "hsl(0, 0%, 0%)",
+        cache_busting_mode: "query",
+        crossOrigin: `use-credentials`,
+        display: "browser",
+        icon: "src/images/favicons/icon.png",
+        start_url: "/",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en-US",
+      },
+    },
   ],
 };
