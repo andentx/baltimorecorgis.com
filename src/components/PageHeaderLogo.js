@@ -24,21 +24,25 @@ const StyledLink = styled(GatsbyLink)`
 `;
 
 const LogoContainer = styled.div`
-  padding: 0.5rem;
+  /* background-color: red; */
 
   height: 100%;
+  width: min(316px, 75vw);
 
   display: flex;
 
   cursor: pointer;
   z-index: 1000;
 
+  svg {
+    /* background-color: orange; */
+  }
+
   :hover {
-    div:first-of-type {
-      border-bottom-color: var(--text-color-hover);
-    }
-    div:last-of-type {
-      border-right-color: var(--text-color-hover);
+    svg {
+      path {
+        fill: var(--text-color-hover);
+      }
     }
   }
 `;
@@ -48,7 +52,7 @@ const PageHeaderLogo = () => {
     <>
       <StyledLink to='/' aria-label='home'>
         <LogoContainer>
-          <svg xmlns='http://www.w3.org/2000/svg' width='600' zoomAndPan='magnify' viewBox='0 0 450 48' height='64' preserveAspectRatio='xMidYMid meet' version='1.0'>
+          <svg xmlns='http://www.w3.org/2000/svg' width='316' zoomAndPan='magnify' viewBox='0 0 450 48' height='48' preserveAspectRatio='xMidYMid meet' version='1.0'>
             <defs>
               <clipPath id='56cea824e0'>
                 <path d='M 5.449219 5 L 36 5 L 36 44 L 5.449219 44 Z M 5.449219 5 ' clipRule='nonzero' />
