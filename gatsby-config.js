@@ -24,8 +24,8 @@ module.exports = {
       options: {
         name: "Baltimore Corgis",
         short_name: "Baltimore Corgis",
-        background_color: "hsl(0, 0%, 0%)",
-        theme_color: "hsl(0, 0%, 0%)",
+        background_color: "hsl(264, 36%, 31%)",
+        theme_color: "hsl(264, 36%, 31%)",
         cache_busting_mode: "query",
         crossOrigin: `use-credentials`,
         display: "browser",
