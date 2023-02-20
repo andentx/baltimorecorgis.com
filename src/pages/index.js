@@ -1,6 +1,10 @@
-import * as React from "react";
+import * as React from 'react';
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
+import GroupPhoto from '../components/GroupPhoto';
+import AboutUs from '../components/AboutUs';
+import OurMembers from '../components/OurMembers';
+import HorizontalDivider from '../components/HorizontalDivider';
 
 export const Head = () => (
   <>
@@ -25,7 +29,13 @@ export const Head = () => (
 const IndexPage = () => {
   return (
     <>
-      <Layout></Layout>
+      <Layout>
+        <GroupPhoto />
+        <AboutUs />
+        <HorizontalDivider />
+        <OurMembers />
+        <HorizontalDivider />
+      </Layout>
     </>
   );
 };
