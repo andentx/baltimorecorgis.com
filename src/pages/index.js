@@ -5,6 +5,7 @@ import GroupPhoto from '../components/GroupPhoto';
 import AboutUs from '../components/AboutUs';
 import OurMembers from '../components/OurMembers';
 import HorizontalDivider from '../components/HorizontalDivider';
+import CorgiOfTheMonth from '../components/CorgiOfTheMonth';
 
 export const Head = () => (
   <>
@@ -35,6 +36,7 @@ const IndexPage = () => {
         <HorizontalDivider />
         <OurMembers />
         <HorizontalDivider />
+        <CorgiOfTheMonth />
       </Layout>
     </>
   );
