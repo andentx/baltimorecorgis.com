@@ -13,6 +13,10 @@ const Container = styled.div`
   display: grid;
 
   margin-bottom: 25rem;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 15rem;
+  }
 `;
 
 const TopFrame = styled.div`
@@ -26,6 +30,12 @@ const TopFrame = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+    position: relative;
+    bottom: 270px;
+  }
 `;
 
 const PhotoContainer = styled.div`
