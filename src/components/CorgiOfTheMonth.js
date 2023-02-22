@@ -8,7 +8,6 @@ const Container = styled.div`
   /* background-color: darkred; */
 
   width: 80%;
-  height: 20rem;
 
   display: grid;
 
