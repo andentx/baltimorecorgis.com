@@ -53,6 +53,8 @@ const GridCell = styled.a`
     color: var(--text-color);
   }
 
+  position: relative;
+
   :focus-visible {
     outline: none;
   }
