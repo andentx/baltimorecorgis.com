@@ -129,7 +129,7 @@ const Subtitle = styled.p`
   margin-bottom: 0.5rem;
 `;
 
-const ShopButton = styled.button`
+const ShopButton = styled.a`
   background-color: var(--baltimore-purple);
 
   border-radius: 10px;
@@ -138,9 +138,14 @@ const ShopButton = styled.button`
 
   font-size: 1.5rem;
 
-  padding: 2rem;
+  padding: 1rem 2rem;
 
   margin-bottom: 15rem;
+
+  :hover {
+    color: lightgrey;
+    opacity: 0.9;
+  }
 `;
 
 const productData = [
@@ -189,7 +194,7 @@ const BestSellers = () => {
         ))}
       </ProductGrid>
 
-      <ShopButton>SHOP</ShopButton>
+      <ShopButton href='https://baltimore-corgis.creator-spring.com/'>SHOP</ShopButton>
     </>
   );
 };
