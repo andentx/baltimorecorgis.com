@@ -12,7 +12,7 @@ const Container = styled.div`
 
   display: grid;
 
-  margin-bottom: 25rem;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 700px) {
     margin-top: 15rem;
