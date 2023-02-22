@@ -6,6 +6,7 @@ import AboutUs from '../components/AboutUs';
 import OurMembers from '../components/OurMembers';
 import HorizontalDivider from '../components/HorizontalDivider';
 import CorgiOfTheMonth from '../components/CorgiOfTheMonth';
+import BestSellers from '../components/BestSellers';
 
 export const Head = () => (
   <>
@@ -37,6 +38,8 @@ const IndexPage = () => {
         <OurMembers />
         <HorizontalDivider />
         <CorgiOfTheMonth />
+        <HorizontalDivider />
+        <BestSellers />
       </Layout>
     </>
   );
