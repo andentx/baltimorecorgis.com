@@ -37,8 +37,6 @@ const PhotoGrid = styled.section`
 const GridCell = styled.a`
   /* background-color: orange; */
 
-  position: relative;
-
   width: 100%;
   /* aspect-ratio: 1/1.3; */
 
