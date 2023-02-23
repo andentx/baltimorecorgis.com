@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import PageHeaderLogo from "./PageHeaderLogo";
-import PageNavigation from "./Navigation/PageNavigation";
+import PageHeaderLogo from './PageHeaderLogo';
+import PageNavigation from './Navigation/PageNavigation';
 
 const Header = styled.header`
   background-color: var(--page-header-background-color);
@@ -16,6 +16,21 @@ const Header = styled.header`
   padding: 0.5rem;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2px solid white;
+`;
+
+const HeaderInnerContent = styled.div`
+  /* background-color: red; */
+  width: 2000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
   align-items: center;
   justify-content: space-between;
 `;
@@ -23,8 +38,10 @@ const Header = styled.header`
 const PageHeader = () => {
   return (
     <Header>
-      <PageHeaderLogo />
-      <PageNavigation />
+      <HeaderInnerContent>
+        <PageHeaderLogo />
+        <PageNavigation />
+      </HeaderInnerContent>
     </Header>
   );
 };
