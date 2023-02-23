@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Link as GatsbyLink } from 'gatsby';
+
 import styled from 'styled-components';
 
 const Footer = styled.footer`
@@ -118,7 +120,7 @@ const Link2 = styled.a`
   }
 `;
 
-const FooterLink = styled.a`
+const FooterLink = styled(GatsbyLink)`
   /* background-color: red; */
   font-size: 1.2rem;
 
@@ -216,9 +218,9 @@ const PageFooter = () => {
         </ContactContainer>
         <LinksContainer>
           <FooterSectionTitle>links</FooterSectionTitle>
-          <FooterLink href=''>Upcoming Events</FooterLink>
-          <FooterLink href=''>Group Rules</FooterLink>
-          <FooterLink href=''>footer link</FooterLink>
+          <FooterLink to='/events'>Upcoming Events</FooterLink>
+          <FooterLink to='/rules'>Group Rules</FooterLink>
+          <FooterLink to='/tickets'>Tickets</FooterLink>
         </LinksContainer>
       </TopContainer>
       <BottomContainer>
