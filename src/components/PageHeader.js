@@ -7,15 +7,13 @@ import PageNavigation from './Navigation/PageNavigation';
 
 const Header = styled.header`
   background-color: var(--page-header-background-color);
-  color: var(--text-color);
 
   height: 4rem;
   width: 100%;
-  /* max-width: 1200px; */
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   border-bottom: 2px solid white;
 `;
@@ -24,10 +22,6 @@ const HeaderInnerContent = styled.div`
   width: 2000px;
 
   padding: 0.5rem 1rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   display: flex;
   align-items: center;
