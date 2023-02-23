@@ -177,7 +177,7 @@ const dogData = [
   {
     id: 3,
     name: 'Cooper',
-    subtitle: 'host pup',
+    subtitle: 'member since',
     photo: <StaticImage src='../images/dogs/cooper.jpg' height={500} width={500} alt={`A photo of Cooper, a Pembroke Welsh Corgi.`} />,
     url: 'https://instagram.com/coopersacorgi',
   },
