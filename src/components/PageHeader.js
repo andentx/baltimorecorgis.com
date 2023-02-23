@@ -13,8 +13,6 @@ const Header = styled.header`
   width: 100%;
   /* max-width: 1200px; */
 
-  padding: 0.5rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +21,9 @@ const Header = styled.header`
 `;
 
 const HeaderInnerContent = styled.div`
-  /* background-color: red; */
   width: 2000px;
+
+  padding: 0.5rem 1rem;
 
   display: flex;
   justify-content: center;
