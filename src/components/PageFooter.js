@@ -28,7 +28,7 @@ const TopContainer = styled.div`
   align-items: flex-start;
 
   width: 100%;
-  max-width: 1200px;
+  max-width: 2000px;
 
   @media screen and (max-width: 700px) {
     flex-direction: column-reverse;
@@ -152,7 +152,7 @@ const BottomContainer = styled.div`
 
   width: 100%;
 
-  max-width: 1200px;
+  max-width: 2000px;
   height: 3rem;
 
   font-size: 1.2rem;
