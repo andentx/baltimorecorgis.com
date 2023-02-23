@@ -220,12 +220,12 @@ const PageNavigation = () => {
     {
       id: 3,
       text: 'shop',
-      url: '#',
+      url: 'https://baltimore-corgis.creator-spring.com/',
     },
     {
       id: 4,
       text: 'contact',
-      url: '#contact',
+      url: '/#contact',
     },
   ];
 
