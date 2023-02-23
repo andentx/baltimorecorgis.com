@@ -24,14 +24,15 @@ const StyledLink = styled(GatsbyLink)`
 `;
 
 const LogoContainer = styled.div`
-  /* background-color: red; */
-
   height: 100%;
   width: min(316px, 75vw);
 
   display: flex;
 
+  margin: 0rem 0.25rem;
+
   cursor: pointer;
+
   z-index: 1000;
 
   svg {
