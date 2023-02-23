@@ -2,13 +2,9 @@ import * as React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 
-import styled from 'styled-components';
+import SectionTitle from './SectionTItle';
 
-const SectionTitle = styled.h2`
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1rem;
-`;
+import styled from 'styled-components';
 
 const ProductGrid = styled.div`
   /* background-color: var(--baltimore-purple); */

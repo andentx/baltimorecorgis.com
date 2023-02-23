@@ -4,11 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import styled from 'styled-components';
 
-const SectionTitle = styled.h2`
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1rem;
-`;
+import SectionTitle from './SectionTItle';
 
 const PhotoGrid = styled.section`
   /* background-color: red; */

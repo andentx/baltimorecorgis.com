@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import styled from 'styled-components';
+import SectionTitle from './SectionTItle';
 
 const Container = styled.div`
   /* background-color: red; */
@@ -47,14 +48,7 @@ const Right = styled.div`
 const RightTop = styled.div`
   /* background-color: green; */
 
-  text-align: center;
-
   width: 90%;
-
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
 `;
 
 const RightBottom = styled.div`
@@ -116,7 +110,7 @@ const AboutUs = () => {
         </Left>
         <Right>
           <RightTop>
-            <h2>About Us</h2>
+            <SectionTitle>About Us</SectionTitle>
           </RightTop>
           <RightBottom>
             <p>
