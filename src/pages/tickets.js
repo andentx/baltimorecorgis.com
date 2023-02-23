@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Layout from '../components/Layout';
+import SectionTitle from '../components/SectionTItle';
 
 export const Head = () => (
   <>
@@ -26,7 +27,8 @@ const TicketsPage = () => {
   return (
     <>
       <Layout>
-        <h1>Tickets</h1>
+        <SectionTitle>Tickets</SectionTitle>
+        <p>Coming soon!</p>
       </Layout>
     </>
   );
