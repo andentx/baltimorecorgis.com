@@ -128,6 +128,16 @@ const FooterLink = styled.a`
   border-radius: 10px;
 
   margin-bottom: 0.5rem;
+
+  :hover {
+    color: var(--text-color-hover);
+  }
+  :active {
+    color: var(--text-color-hover);
+  }
+  .selected {
+    color: var(--text-color-hover);
+  }
 `;
 
 const BottomContainer = styled.div`
