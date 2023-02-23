@@ -162,7 +162,7 @@ const PageFooter = () => {
   return (
     <Footer>
       <TopContainer>
-        <ContactContainer>
+        <ContactContainer id='contact'>
           <FooterSectionTitle>contact</FooterSectionTitle>
           <EmailLink href='mailto:baltimorecorgis@gmail.com'>baltimorecorgis@gmail.com</EmailLink>
           <SocialLinks>
@@ -218,8 +218,8 @@ const PageFooter = () => {
         </ContactContainer>
         <LinksContainer>
           <FooterSectionTitle>links</FooterSectionTitle>
-          <FooterLink to='/events'>Upcoming Events</FooterLink>
-          <FooterLink to='/rules'>Group Rules</FooterLink>
+          <FooterLink to='/events'>Events</FooterLink>
+          <FooterLink to='/rules'>Rules</FooterLink>
           <FooterLink to='/tickets'>Tickets</FooterLink>
         </LinksContainer>
       </TopContainer>

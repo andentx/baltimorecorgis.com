@@ -214,18 +214,18 @@ const PageNavigation = () => {
     },
     {
       id: 2,
-      text: 'about',
-      url: '/about',
+      text: 'events',
+      url: '/events',
     },
     {
       id: 3,
       text: 'shop',
-      url: '/#shop',
+      url: '#',
     },
     {
       id: 4,
       text: 'contact',
-      url: '/contact',
+      url: '#contact',
     },
   ];
 
