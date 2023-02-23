@@ -64,9 +64,9 @@ const MainContent = styled.main`
   color: var(--text-color);
 
   width: 100%;
-  max-width: 1200px;
+  max-width: 2000px;
 
-  padding-top: min(5vw, 3rem);
+  /* padding-top: min(5vw, 3rem); */
 
   display: flex;
   flex-direction: column;
