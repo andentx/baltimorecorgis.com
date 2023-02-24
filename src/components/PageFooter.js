@@ -65,6 +65,12 @@ const EmailLink = styled.a`
   border-radius: 10px;
 
   margin-bottom: 0.5rem;
+
+  transition: color 200ms;
+
+  :hover {
+    color: var(--text-color-hover);
+  }
 `;
 
 const LinksContainer = styled.div`
@@ -99,6 +105,21 @@ const Link1 = styled.a`
 
   padding: 0.7rem;
 
+  svg {
+    path {
+      fill: white;
+      transition: fill 200ms;
+    }
+  }
+
+  :hover {
+    svg {
+      path {
+        fill: var(--text-color-hover);
+      }
+    }
+  }
+
   * {
     width: 100%;
     height: 100%;
@@ -113,6 +134,21 @@ const Link2 = styled.a`
   border-radius: 10px;
 
   padding: 0.7rem;
+
+  svg {
+    path {
+      fill: white;
+      transition: fill 200ms;
+    }
+  }
+
+  :hover {
+    svg {
+      path {
+        fill: var(--text-color-hover);
+      }
+    }
+  }
 
   * {
     width: 100%;
@@ -130,6 +166,8 @@ const FooterLink = styled(GatsbyLink)`
   border-radius: 10px;
 
   margin-bottom: 0.5rem;
+
+  transition: color 200ms;
 
   :hover {
     color: var(--text-color-hover);
