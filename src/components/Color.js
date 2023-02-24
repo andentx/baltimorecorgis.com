@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalColor = createGlobalStyle`
 
@@ -20,6 +20,7 @@ const GlobalColor = createGlobalStyle`
     
     --text-color: var(--off-white);
     --text-color-hover: var(--off-white-darker);
+    --text-color-hover: hsl(264, 36%, 81%);
 
     --accent-color: hotpink;
     --focus-color: var(--off-white-darker);
