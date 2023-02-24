@@ -9,6 +9,9 @@ import Color from '../components/Color';
 import PageHeader from '../components/PageHeader';
 import PageFooter from '../components/PageFooter';
 
+// import GillSansCustom from '../../static/fonts/GillSansCustom.woff2';
+import GillSansCustom from '../fonts/GillSansCustom.woff2';
+
 const GlobalReset = createGlobalStyle`
  html,
  body,
@@ -50,6 +53,12 @@ const GlobalReset = createGlobalStyle`
 }
  `;
 
+const FontStyles = createGlobalStyle`
+@font-face {
+  font-family: 'Gill Sans Custom';
+  src: url(${GillSansCustom}) format('woff2');}
+`;
+
 const PageContainer = styled.div`
   min-height: 100vh;
   min-height: 100dvh;
@@ -80,6 +89,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalReset />
       <Color />
+      <FontStyles />
       <PageContainer>
         <PageHeader />
         <MainContent>{children}</MainContent>
