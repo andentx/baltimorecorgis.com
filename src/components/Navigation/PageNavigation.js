@@ -176,6 +176,8 @@ const LinkPanel = styled.div`
 
     position: relative;
 
+    transition: color 200ms;
+
     :focus-visible {
       outline: none;
     }
