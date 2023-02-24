@@ -13,7 +13,7 @@ const GroupPhoto = () => {
   return (
     <>
       <GroupPhotoContainer>
-        <StaticImage src='../images/photos/group-photo.png' alt='A photo of the Baltimore Corgi group at Bark Social in 2023' />
+        <StaticImage src='../images/photos/group-photo-4000.png' alt='A photo of the Baltimore Corgi group at Bark Social in 2023' />
       </GroupPhotoContainer>
     </>
   );
