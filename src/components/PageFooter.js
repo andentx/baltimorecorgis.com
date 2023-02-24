@@ -71,6 +71,23 @@ const EmailLink = styled.a`
   :hover {
     color: var(--text-color-hover);
   }
+
+  position: relative;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 7.5px;
+  }
 `;
 
 const LinksContainer = styled.div`
@@ -124,6 +141,23 @@ const Link1 = styled.a`
     width: 100%;
     height: 100%;
   }
+
+  position: relative;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 22.5px;
+  }
 `;
 const Link2 = styled.a`
   /* background-color: #555; */
@@ -150,6 +184,23 @@ const Link2 = styled.a`
     }
   }
 
+  position: relative;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 22.5px;
+  }
+
   * {
     width: 100%;
     height: 100%;
@@ -160,7 +211,7 @@ const FooterLink = styled(GatsbyLink)`
   /* background-color: red; */
   font-size: 1.2rem;
 
-  color: white;
+  color: var(--text-color);
 
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -168,6 +219,8 @@ const FooterLink = styled(GatsbyLink)`
   margin-bottom: 0.5rem;
 
   transition: color 200ms;
+
+  position: relative;
 
   :hover {
     color: var(--text-color-hover);
@@ -177,6 +230,21 @@ const FooterLink = styled(GatsbyLink)`
   }
   .selected {
     color: var(--text-color-hover);
+  }
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 7.5px;
   }
 `;
 
