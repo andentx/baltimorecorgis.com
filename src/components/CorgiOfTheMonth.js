@@ -7,7 +7,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   /* background-color: darkred; */
 
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
 
   display: grid;
 
@@ -33,7 +34,16 @@ const TopFrame = styled.div`
   @media screen and (max-width: 700px) {
     justify-content: center;
     position: relative;
-    bottom: 270px;
+    bottom: 235px;
+  }
+  @media screen and (max-width: 600px) {
+    bottom: 245px;
+  }
+  @media screen and (max-width: 452px) {
+    bottom: 255px;
+  }
+  @media screen and (max-width: 350px) {
+    bottom: 265px;
   }
 `;
 
@@ -89,6 +99,10 @@ const Text = styled.p`
   line-height: 1.3;
 
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 const Button = styled.button`
@@ -114,7 +128,7 @@ const CorgiOfTheMonth = () => {
         <BottomFrame>
           <TextContainer>
             <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
-            <Button>Sign Up!</Button>
+            <Button>SIGN UP</Button>
           </TextContainer>
         </BottomFrame>
       </Container>
