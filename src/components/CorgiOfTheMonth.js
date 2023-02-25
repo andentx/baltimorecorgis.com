@@ -166,7 +166,7 @@ const CorgiOfTheMonth = () => {
         <BottomFrame>
           <TextContainer>
             <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
-            <Button href='https://www.wikipedia.org'>
+            <Button href='https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform'>
               <ButtonInnerContent>SIGN UP</ButtonInnerContent>
             </Button>
           </TextContainer>
