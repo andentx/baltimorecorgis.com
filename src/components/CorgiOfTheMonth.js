@@ -43,7 +43,7 @@ const TopFrame = styled.div`
     bottom: 255px;
   }
   @media screen and (max-width: 350px) {
-    bottom: 265px;
+    bottom: 275px;
   }
 `;
 
@@ -98,14 +98,46 @@ const Text = styled.p`
   font-size: 1.5rem;
   line-height: 1.3;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   @media screen and (max-width: 700px) {
     width: 100%;
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
+  /* background-color: red; */
+  background: none;
+
+  display: flex;
+
+  border-radius: 18px;
+
+  padding: 0.5rem;
+
+  position: relative;
+
+  z-index: 2000;
+
+  outline: none;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 18px;
+  }
+`;
+
+const ButtonInnerContent = styled.p`
   background-color: white;
   color: var(--baltimore-purple);
 
@@ -114,6 +146,12 @@ const Button = styled.button`
   font-size: 1.2rem;
 
   padding: 1rem 2rem;
+
+  transition: background-color 200ms;
+
+  :hover {
+    background-color: var(--text-color-hover);
+  }
 `;
 
 const CorgiOfTheMonth = () => {
@@ -128,7 +166,9 @@ const CorgiOfTheMonth = () => {
         <BottomFrame>
           <TextContainer>
             <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
-            <Button>SIGN UP</Button>
+            <Button href='https://www.wikipedia.org'>
+              <ButtonInnerContent>SIGN UP</ButtonInnerContent>
+            </Button>
           </TextContainer>
         </BottomFrame>
       </Container>
