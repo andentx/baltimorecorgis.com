@@ -108,7 +108,7 @@ const CorgiOfTheMonth = () => {
       <Container>
         <TopFrame>
           <PhotoContainer>
-            <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' />
+            <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' placeholder='blurred' />
           </PhotoContainer>
         </TopFrame>
         <BottomFrame>
