@@ -9,7 +9,8 @@ import SectionTitle from './SectionTitle';
 const PhotoGrid = styled.section`
   /* background-color: red; */
 
-  width: 85%;
+  width: 95%;
+  max-width: 1500px;
 
   display: grid;
   grid-template-columns: repeat(5, 18%);
