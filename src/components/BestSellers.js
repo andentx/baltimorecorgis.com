@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 
-import SectionTitle from './SectionTItle';
+import SectionTitle from './SectionTitle';
 
 import styled from 'styled-components';
 

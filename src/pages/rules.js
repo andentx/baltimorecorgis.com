@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 
-import SectionTitle from '../components/SectionTItle';
+import SectionTitle from '../components/SectionTitle';
 
 export const Head = () => (
   <>

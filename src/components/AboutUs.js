@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import styled from 'styled-components';
-import SectionTitle from './SectionTItle';
+import SectionTitle from './SectionTitle';
 
 const Container = styled.div`
   /* background-color: red; */
