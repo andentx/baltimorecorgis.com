@@ -40,10 +40,6 @@ const GridCell = styled.a`
 
   color: var(--text-color);
 
-  a {
-    color: var(--text-color);
-  }
-
   position: relative;
 
   :focus-visible {
@@ -61,6 +57,12 @@ const GridCell = styled.a`
     border-radius: 15px;
   }
 
+  transition: color 200ms;
+
+  div {
+    transition: opacity 200ms;
+  }
+
   :link {
     color: var(--text-color);
   }
@@ -70,19 +72,18 @@ const GridCell = styled.a`
   }
 
   :hover {
-    color: var(--text-color-hover);
+    color: hsl(0, 0%, 70%);
 
-    span {
-      background: rgb(255, 216, 96);
-      background: linear-gradient(142deg, rgba(255, 216, 96, 1) 0%, rgba(255, 191, 0, 1) 50%, rgba(237, 178, 0, 1) 100%);
+    div {
+      opacity: 0.8;
     }
   }
 
   :active {
     color: var(--text-color);
-    span {
-      background: rgb(255, 216, 96);
-      background: linear-gradient(142deg, rgba(255, 216, 96, 1) 0%, rgba(255, 191, 0, 1) 50%, rgba(237, 178, 0, 1) 100%);
+
+    div {
+      opacity: 0.8;
     }
   }
 `;
@@ -116,10 +117,6 @@ const Photo = styled.div`
 
     height: 75%;
     width: 75%;
-  }
-
-  :hover {
-    opacity: 0.8;
   }
 
   * {
