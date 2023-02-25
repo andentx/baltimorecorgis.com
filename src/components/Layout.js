@@ -65,6 +65,8 @@ const FontStyles = createGlobalStyle`
 `;
 
 const PageContainer = styled.div`
+  font-family: 'Montserrat Regular';
+
   min-height: 100vh;
   min-height: 100dvh;
 
@@ -76,8 +78,6 @@ const PageContainer = styled.div`
 const MainContent = styled.main`
   background-color: var(--main-section-background-color);
   color: var(--text-color);
-
-  font-family: 'Montserrat Regular';
 
   width: 100%;
   max-width: 2000px;
