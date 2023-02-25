@@ -9,22 +9,18 @@ import SectionTitle from './SectionTitle';
 const PhotoGrid = styled.section`
   /* background-color: red; */
 
-  width: 80%;
+  width: 85%;
 
   display: grid;
   grid-template-columns: repeat(5, 18%);
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
 
-  @media screen and (max-width: 750px) {
-    grid-template-columns: repeat(4, 24%);
-  }
-
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 1070px) {
     grid-template-columns: repeat(3, 30%);
   }
 
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
 
   margin-bottom: clamp(1.6rem, 0.6333rem + 7.7333vw, 4.5rem);
@@ -34,14 +30,13 @@ const GridCell = styled.a`
   /* background-color: orange; */
 
   width: 100%;
-  /* aspect-ratio: 1/1.3; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
   color: var(--text-color);
 
@@ -105,7 +100,7 @@ const Photo = styled.div`
   justify-content: center;
 
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 
   a {
     height: 100%;
@@ -138,8 +133,11 @@ const Name = styled.p`
   text-align: center;
 
   width: 90%;
+  max-height: 3.5rem;
 
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: clamp(1rem, 0.5rem + 2.67vw, 1.5rem);
+
   font-weight: 400;
 
   margin-bottom: 0.5rem;
@@ -157,6 +155,10 @@ const Subtitle = styled.p`
   font-weight: 200;
 
   margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
 `;
 
 const dogData = [
