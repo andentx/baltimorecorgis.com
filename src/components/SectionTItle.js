@@ -7,6 +7,8 @@ const Title = styled.h2`
   text-align: center;
   margin-bottom: 1rem;
 
+  margin-left: 2rem;
+
   font-family: 'Gill Sans Custom';
 `;
 
