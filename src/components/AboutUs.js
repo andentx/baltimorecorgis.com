@@ -42,7 +42,7 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   /* background-color: green; */
   padding-left: 2rem;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.63rem + 2vw, 1.5rem);
   line-height: 1.4;
 
   @media screen and (max-width: 750px) {
