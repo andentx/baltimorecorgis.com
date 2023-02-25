@@ -16,7 +16,7 @@ const PhotoGrid = styled.section`
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
 
-  @media screen and (max-width: 1070px) {
+  @media screen and (max-width: 1170px) {
     grid-template-columns: repeat(3, 30%);
   }
 
@@ -143,6 +143,8 @@ const Name = styled.p`
 const Subtitle = styled.p`
   /* background-color: blue; */
 
+  font-size: 1rem;
+
   text-align: center;
 
   font-style: italic;
@@ -153,7 +155,7 @@ const Subtitle = styled.p`
 
   margin-bottom: 0.5rem;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     display: none;
   }
 `;
