@@ -11,6 +11,7 @@ import PageFooter from '../components/PageFooter';
 
 // import GillSansCustom from '../../static/fonts/GillSansCustom.woff2';
 import GillSansCustom from '../fonts/GillSansCustom.woff2';
+import MontserratRegular from '../fonts/MontserratRegular.woff2';
 
 const GlobalReset = createGlobalStyle`
  html,
@@ -57,6 +58,10 @@ const FontStyles = createGlobalStyle`
 @font-face {
   font-family: 'Gill Sans Custom';
   src: url(${GillSansCustom}) format('woff2');}
+
+  @font-face {
+  font-family: 'Montserrat Regular';
+  src: url(${MontserratRegular}) format('woff2');}
 `;
 
 const PageContainer = styled.div`
@@ -71,6 +76,8 @@ const PageContainer = styled.div`
 const MainContent = styled.main`
   background-color: var(--main-section-background-color);
   color: var(--text-color);
+
+  font-family: 'Montserrat Regular';
 
   width: 100%;
   max-width: 2000px;
