@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import styled from 'styled-components';
 
-const Container = styled.div`
+const HorizontalContainer = styled.div`
   /* background-color: darkred; */
 
   width: 90%;
@@ -12,10 +12,10 @@ const Container = styled.div`
 
   display: grid;
 
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   @media screen and (max-width: 700px) {
-    margin-top: 15rem;
+    display: none;
   }
 `;
 
@@ -80,12 +80,16 @@ const TextContainer = styled.div`
 
   width: 80%;
 
-  padding: 2rem;
+  padding: 1.5rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
 `;
 
 const Text = styled.p`
@@ -154,10 +158,36 @@ const ButtonInnerContent = styled.p`
   }
 `;
 
+const VerticalContainer = styled.div`
+  /* background-color: red; */
+  width: 100%;
+  min-height: 1rem;
+
+  width: 95%;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+  }
+`;
+
+const VerticalPhotoContainer = styled.div`
+  /* background-color: orange; */
+  width: 10rem;
+
+  position: relative;
+  bottom: -1rem;
+`;
+
 const CorgiOfTheMonth = () => {
   return (
     <>
-      <Container>
+      <HorizontalContainer>
         <TopFrame>
           <PhotoContainer>
             <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' placeholder='blurred' />
@@ -171,7 +201,19 @@ const CorgiOfTheMonth = () => {
             </Button>
           </TextContainer>
         </BottomFrame>
-      </Container>
+      </HorizontalContainer>
+
+      <VerticalContainer>
+        <VerticalPhotoContainer>
+          <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' placeholder='blurred' />
+        </VerticalPhotoContainer>
+        <TextContainer>
+          <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
+          <Button href='https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform'>
+            <ButtonInnerContent>SIGN UP</ButtonInnerContent>
+          </Button>
+        </TextContainer>
+      </VerticalContainer>
     </>
   );
 };
