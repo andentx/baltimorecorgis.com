@@ -269,7 +269,7 @@ const PageFooter = () => {
     <Footer>
       <TopContainer>
         <ContactContainer id='contact'>
-          <FooterSectionTitle>contact</FooterSectionTitle>
+          <FooterSectionTitle>Contact</FooterSectionTitle>
           <EmailLink href='mailto:baltimorecorgis@gmail.com'>baltimorecorgis@gmail.com</EmailLink>
           <SocialLinks>
             <Link1 href=''>
@@ -323,10 +323,10 @@ const PageFooter = () => {
           </SocialLinks>
         </ContactContainer>
         <LinksContainer>
-          <FooterSectionTitle>links</FooterSectionTitle>
-          <FooterLink to='/events'>Events</FooterLink>
-          <FooterLink to='/rules'>Rules</FooterLink>
-          <FooterLink to='/tickets'>Tickets</FooterLink>
+          <FooterSectionTitle>Links</FooterSectionTitle>
+          <FooterLink to='/events'>events</FooterLink>
+          <FooterLink to='/rules'>rules</FooterLink>
+          <FooterLink to='/tickets'>tickets</FooterLink>
         </LinksContainer>
       </TopContainer>
       <BottomContainer>
