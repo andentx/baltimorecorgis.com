@@ -10,19 +10,20 @@ const ProductGrid = styled.div`
   /* background-color: var(--baltimore-purple); */
   /* background-color: red; */
 
-  width: 100%;
+  width: 95%;
+  max-width: 1500px;
 
   display: grid;
-  grid-template-columns: repeat(4, 24%);
+  grid-template-columns: repeat(4, 23%);
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
 
-  @media screen and (max-width: 550px) {
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 820px) {
     grid-template-columns: repeat(2, 48%);
   }
-
-  align-items: center;
-  justify-content: space-evenly;
 
   margin-bottom: 2rem;
 `;
@@ -106,9 +107,18 @@ const Name = styled.p`
   text-align: center;
 
   width: 90%;
+  padding: 0 1rem;
 
-  font-size: 1.5rem;
+  /* 0.9rem at 900px, 1.5rem at 1600px */
+  font-size: clamp(0.9rem, 0.13rem + 1.37vw, 1.5rem);
+
+  @media screen and (max-width: 820px) {
+    /* 0.9rem at 375px, 1.6rem at 820px */
+    font-size: clamp(0.9rem, 0.31rem + 2.52vw, 1.6rem);
+  }
+
   font-weight: 400;
+  line-height: 1.4;
 
   margin-bottom: 0.5rem;
 `;
@@ -121,8 +131,18 @@ const Subtitle = styled.p`
   font-style: italic;
 
   width: 90%;
+  padding: 0.5rem;
+
+  /* 0.8rem at 900px, 1.2rem at 1600px */
+  font-size: clamp(0.8rem, 0.29rem + 0.91vw, 1.2rem);
+
+  @media screen and (max-width: 820px) {
+    /* 0.8rem at 300px, 1.0rem at 820px */
+    font-size: clamp(0.8rem, 0.68rem + 0.62vw, 1rem);
+  }
 
   font-weight: 200;
+  line-height: 1.3;
 
   margin-bottom: 0.5rem;
 `;
@@ -158,14 +178,23 @@ const productData = [
     id: 2,
     name: 'Maryland Flag Corgi',
     subtitle: 'Die Cut Sticker',
-    photo: <StaticImage src='../images/products/baltimore-corgis-maryland-flag-sticker.jpg' height={220} width={220} alt={`A sticker in the shape of a corgi sitting down with the Maryland flag silhouette.`} />,
+    photo: (
+      <StaticImage
+        src='../images/products/baltimore-corgis-maryland-flag-sticker.jpg'
+        height={220}
+        width={220}
+        alt={`A sticker in the shape of a corgi sitting down with the Maryland flag silhouette.`}
+      />
+    ),
     url: 'https://baltimore-corgis.creator-spring.com/listing/maryland-flag-corgi?product=794',
   },
   {
     id: 3,
     name: 'Baltimore Cityscape Corgis (Day)',
     subtitle: 'Classic Tank Top',
-    photo: <StaticImage src='../images/products/white-baltimore-corgis-tank-top-cityscape.jpg' height={220} width={220} alt={`A photo of white tank top with cartoon corgis and the Baltimore cityscape.`} />,
+    photo: (
+      <StaticImage src='../images/products/white-baltimore-corgis-tank-top-cityscape.jpg' height={220} width={220} alt={`A photo of white tank top with cartoon corgis and the Baltimore cityscape.`} />
+    ),
     url: 'https://baltimore-corgis.creator-spring.com/listing/baltimore-cityscape-day?product=14',
   },
   {
