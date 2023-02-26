@@ -165,22 +165,52 @@ const Subtitle = styled.p`
   margin-bottom: 0.5rem;
 `;
 
-const ShopButton = styled.a`
+const Button = styled.a`
+  /* background-color: red; */
+  background: none;
+
+  display: flex;
+
+  border-radius: 18px;
+
+  padding: 0.5rem;
+
+  position: relative;
+
+  outline: none;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 18px;
+  }
+
+  margin-bottom: 15rem;
+`;
+
+const ButtonInnerContent = styled.p`
   background-color: var(--baltimore-purple);
+  color: white;
 
   border-radius: 10px;
 
-  color: white;
-
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   padding: 1rem 2rem;
 
-  margin-bottom: 15rem;
+  transition: background-color 200ms;
 
   :hover {
-    color: lightgrey;
-    opacity: 0.9;
+    background-color: hsl(264, 36%, 36%);
   }
 `;
 
@@ -239,7 +269,9 @@ const BestSellers = () => {
         ))}
       </ProductGrid>
 
-      <ShopButton href='https://baltimore-corgis.creator-spring.com/'>SHOP</ShopButton>
+      <Button href='https://baltimore-corgis.creator-spring.com'>
+        <ButtonInnerContent>SIGN UP</ButtonInnerContent>
+      </Button>
     </>
   );
 };
