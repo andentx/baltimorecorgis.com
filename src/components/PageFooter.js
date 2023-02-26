@@ -262,6 +262,11 @@ const BottomContainer = styled.div`
   height: 3rem;
 
   font-size: 1.2rem;
+
+  p {
+    font-size: 0.9rem;
+    font-family: 'Montserrat Light';
+  }
 `;
 
 const PageFooter = () => {
@@ -321,7 +326,7 @@ const PageFooter = () => {
         </LinksContainer>
       </TopContainer>
       <BottomContainer>
-        <p>© Baltimore Corgis 2023</p>
+        <p>© 2023 Baltimore Corgis</p>
       </BottomContainer>
     </Footer>
   );
