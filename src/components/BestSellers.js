@@ -60,6 +60,12 @@ const GridCell = styled.a`
     border-radius: 15px;
   }
 
+  transition: color 200ms;
+
+  div {
+    transition: opacity 200ms;
+  }
+
   :link {
     color: var(--text-color);
   }
@@ -69,7 +75,19 @@ const GridCell = styled.a`
   }
 
   :hover {
-    color: var(--text-color-hover);
+    color: hsl(0, 0%, 70%);
+
+    div {
+      opacity: 0.8;
+    }
+  }
+
+  :active {
+    color: var(--text-color);
+
+    div {
+      opacity: 0.8;
+    }
   }
 
   margin-bottom: 1rem;
