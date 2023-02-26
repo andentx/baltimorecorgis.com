@@ -272,7 +272,7 @@ const BestSellers = () => {
       </ProductGrid>
 
       <Button href='https://baltimore-corgis.creator-spring.com'>
-        <ButtonInnerContent>SIGN UP</ButtonInnerContent>
+        <ButtonInnerContent>SHOP NOW</ButtonInnerContent>
       </Button>
     </>
   );
