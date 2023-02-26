@@ -12,6 +12,7 @@ import PageFooter from '../components/PageFooter';
 // import GillSansCustom from '../../static/fonts/GillSansCustom.woff2';
 import GillSansCustom from '../fonts/GillSansCustom.woff2';
 import MontserratRegular from '../fonts/MontserratRegular.woff2';
+import MontserratLight from '../fonts/MontserratLight.woff2';
 
 const GlobalReset = createGlobalStyle`
  html,
@@ -62,6 +63,10 @@ const FontStyles = createGlobalStyle`
   @font-face {
   font-family: 'Montserrat Regular';
   src: url(${MontserratRegular}) format('woff2');}
+
+  @font-face {
+  font-family: 'Montserrat Light';
+  src: url(${MontserratLight}) format('woff2');}
 `;
 
 const PageContainer = styled.div`
