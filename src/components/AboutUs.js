@@ -41,6 +41,8 @@ const ImageContainer = styled.div`
 `;
 const TextContainer = styled.div`
   /* background-color: green; */
+
+  font-family: 'Montserrat Light';
   padding-left: 2rem;
   font-size: clamp(1rem, 0.63rem + 2vw, 1.5rem);
   line-height: 1.4;
@@ -99,8 +101,9 @@ const AboutUs = () => {
           </ImageContainer>
           <TextContainer>
             <p>
-              Welcome to the Baltimore Corgi Community! Established on Facebook in 2014, we are a group of corgi lovers based in the Baltimore area and surrounding counties. Our group provides a fun
-              and supportive community for corgi owners to connect, ask questions, show off their beautiful corgis, and participate in local events and activities.
+              Welcome to the Baltimore Corgi community! Established in 2014 as a Facebook group, we are dedicated to bringing together Corgi owners in the Baltimore area and surrounding counties. Our
+              goal is to create a supportive and engaging environment that serves as a valuable resource for Corgi owners or owners-to-be to connect with each other, ask questions, share advice, and
+              participate in local events and activities.
             </p>
           </TextContainer>
         </AboutContainer>
