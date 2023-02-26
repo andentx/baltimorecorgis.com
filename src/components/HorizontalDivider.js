@@ -7,7 +7,7 @@ const Line = styled.div`
   width: 50%;
   background-color: var(--baltimore-purple);
 
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 `;
 
 const HorizontalDivider = () => {
