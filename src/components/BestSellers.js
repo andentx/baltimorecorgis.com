@@ -148,6 +148,8 @@ const Subtitle = styled.p`
 
   font-style: italic;
 
+  font-family: 'Montserrat Light';
+
   width: 90%;
   padding: 0.5rem;
 

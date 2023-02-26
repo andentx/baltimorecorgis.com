@@ -145,6 +145,7 @@ const Subtitle = styled.p`
   /* background-color: blue; */
 
   font-size: 1rem;
+  font-family: 'Montserrat Light';
 
   text-align: center;
 
