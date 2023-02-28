@@ -27,7 +27,7 @@ const PhotoGrid = styled.section`
   margin-bottom: clamp(1.6rem, 0.6333rem + 7.7333vw, 4.5rem);
 `;
 
-const GridCell = styled.a`
+const GridCellLink = styled.a`
   /* background-color: orange; */
 
   width: 100%;
@@ -87,6 +87,20 @@ const GridCell = styled.a`
       opacity: 0.8;
     }
   }
+`;
+const GridCell = styled.div`
+  /* background-color: orange; */
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  color: var(--text-color);
 `;
 
 const Photo = styled.div`
@@ -279,11 +293,11 @@ const OurMembers = () => {
         {dogData.map((dog) => {
           if (dog.url) {
             return (
-              <GridCell key={dog.id} href={dog.url} aria-label={dog.text}>
+              <GridCellLink key={dog.id} href={dog.url} aria-label={dog.text}>
                 <Photo>{dog.photo}</Photo>
                 <Name>{dog.name}</Name>
                 <Subtitle>{dog.subtitle}</Subtitle>
-              </GridCell>
+              </GridCellLink>
             );
           } else {
             return (
