@@ -148,7 +148,7 @@ const Subtitle = styled.p`
 
   font-style: italic;
 
-  font-family: 'Montserrat Light';
+  font-family: 'Montserrat Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   width: 90%;
   padding: 0.5rem;

@@ -42,7 +42,8 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   /* background-color: green; */
 
-  font-family: 'Montserrat Light';
+  font-family: 'Montserrat Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   padding-left: 2rem;
   font-size: clamp(1rem, 0.63rem + 2vw, 1.5rem);
   line-height: 1.4;
