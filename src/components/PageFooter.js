@@ -269,6 +269,17 @@ const BottomContainer = styled.div`
   }
 `;
 
+const ScreenReaderOnly = styled.span`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+`;
+
 const PageFooter = () => {
   return (
     <Footer>
@@ -278,6 +289,7 @@ const PageFooter = () => {
           <EmailLink href='mailto:baltimorecorgis@gmail.com'>baltimorecorgis@gmail.com</EmailLink>
           <SocialLinks>
             <Link1 href='https://www.facebook.com/groups/BaltimoreCorgis'>
+              <ScreenReaderOnly>Visit the Baltimore Corgi's Facebook Page</ScreenReaderOnly>
               <svg xmlns='http://www.w3.org/2000/svg' width='1800' zoomAndPan='magnify' viewBox='0 0 1350 1349.999938' height='1800' preserveAspectRatio='xMidYMid meet' version='1.0'>
                 <path
                   fill='#fefefe'
@@ -289,6 +301,7 @@ const PageFooter = () => {
             </Link1>
 
             <Link2 href='https://www.instagram.com/baltimorecorgis/'>
+              <ScreenReaderOnly>Visit the Baltimore Corgi's Instagram Page</ScreenReaderOnly>
               <svg xmlns='http://www.w3.org/2000/svg' width='1800' zoomAndPan='magnify' viewBox='0 0 1350 1349.999938' height='1800' preserveAspectRatio='xMidYMid meet' version='1.0'>
                 <path
                   fill='#fefefe'
