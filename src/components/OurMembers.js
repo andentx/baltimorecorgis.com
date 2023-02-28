@@ -274,14 +274,27 @@ const OurMembers = () => {
   return (
     <>
       <SectionTitle>Meet some of our members...</SectionTitle>
+
       <PhotoGrid>
-        {dogData.map((dog) => (
-          <GridCell key={dog.id} href={dog.url} aria-label={dog.text}>
-            <Photo>{dog.photo}</Photo>
-            <Name>{dog.name}</Name>
-            <Subtitle>{dog.subtitle}</Subtitle>
-          </GridCell>
-        ))}
+        {dogData.map((dog) => {
+          if (dog.url) {
+            return (
+              <GridCell key={dog.id} href={dog.url} aria-label={dog.text}>
+                <Photo>{dog.photo}</Photo>
+                <Name>{dog.name}</Name>
+                <Subtitle>{dog.subtitle}</Subtitle>
+              </GridCell>
+            );
+          } else {
+            return (
+              <GridCell key={dog.id} aria-label={dog.text}>
+                <Photo>{dog.photo}</Photo>
+                <Name>{dog.name}</Name>
+                <Subtitle>{dog.subtitle}</Subtitle>
+              </GridCell>
+            );
+          }
+        })}
       </PhotoGrid>
     </>
   );
