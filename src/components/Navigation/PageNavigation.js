@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { Link } from 'gatsby';
 
@@ -208,6 +207,27 @@ const PageNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const bodyElementsRef = useRef(null);
+  const bodyElementsSelectorRef = useRef('main *, #headerLogo, footer *');
+
+  useEffect(() => {
+    const bodyElements = document.querySelectorAll(bodyElementsSelectorRef.current);
+    bodyElementsRef.current = bodyElements;
+  }, []);
+
+  useEffect(() => {
+    if (bodyElementsRef.current) {
+      const bodyElements = bodyElementsRef.current;
+      bodyElements.forEach((element) => {
+        if (isOpen) {
+          element.setAttribute('tabindex', '-1');
+        } else {
+          element.removeAttribute('tabindex');
+        }
+      });
+    }
+  }, [isOpen]);
+
   const navLinks = [
     {
       id: 1,
@@ -257,7 +277,7 @@ const PageNavigation = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.id}>
-                <Link to={link.url} onClick={toggleMenu} activeClassName='selected'>
+                <Link to={link.url} onClick={toggleMenu} activeClassName='selected' tabIndex={isOpen ? 0 : -1}>
                   {link.text}
                 </Link>
               </li>

@@ -54,7 +54,7 @@ const LogoContainer = styled.div`
 const PageHeaderLogo = () => {
   return (
     <>
-      <StyledLink to='/' aria-label='home'>
+      <StyledLink to='/' aria-label='home' id='headerLogo'>
         <LogoContainer>
           <svg xmlns='http://www.w3.org/2000/svg' width='316' zoomAndPan='magnify' viewBox='0 0 450 48' height='48' preserveAspectRatio='xMidYMid meet' version='1.0'>
             <defs>
