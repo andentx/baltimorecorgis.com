@@ -19,6 +19,7 @@ const Header = styled.header`
 `;
 
 const HeaderInnerContent = styled.div`
+  height: 3rem;
   width: 2000px;
 
   padding: 0 0.5rem;
