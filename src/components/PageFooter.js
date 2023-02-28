@@ -111,7 +111,19 @@ const SocialLinks = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 85%;
+
+  color: var(--text-color);
+  a:hover {
+    color: var(--text-color);
+  }
+  a:active {
+    color: var(--text-color);
+  }
+  a:visited {
+    color: var(--text-color);
+  }
 `;
+
 const Link1 = styled.a`
   /* background-color: #444; */
 
