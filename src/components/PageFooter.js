@@ -36,7 +36,7 @@ const TopContainer = styled.div`
   }
 `;
 
-const FooterSectionTitle = styled.h4`
+const FooterSectionTitle = styled.h3`
   font-size: 2rem;
   margin-bottom: 1rem;
 `;

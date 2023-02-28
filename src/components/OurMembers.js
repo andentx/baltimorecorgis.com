@@ -125,7 +125,7 @@ const Photo = styled.div`
   }
 `;
 
-const Name = styled.p`
+const Name = styled.h3`
   /* background-color: green; */
 
   text-align: center;
