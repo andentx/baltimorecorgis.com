@@ -58,15 +58,21 @@ const GlobalReset = createGlobalStyle`
 const FontStyles = createGlobalStyle`
 @font-face {
   font-family: 'Gill Sans Custom';
-  src: url(${GillSansCustom}) format('woff2');}
+  src: url(${GillSansCustom}) format('woff2');
+  font-display: swap;
+}
 
   @font-face {
   font-family: 'Montserrat Regular';
-  src: url(${MontserratRegular}) format('woff2');}
+  src: url(${MontserratRegular}) format('woff2');
+  font-display: swap;
+}
 
   @font-face {
   font-family: 'Montserrat Light';
-  src: url(${MontserratLight}) format('woff2');}
+  src: url(${MontserratLight}) format('woff2');
+  font-display: swap;
+}
 `;
 
 const PageContainer = styled.div`
