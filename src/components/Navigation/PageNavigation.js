@@ -267,7 +267,7 @@ const PageNavigation = () => {
         </ul>
       </DesktopNavigation>
 
-      <MobileNavigationMenuIcon onClick={toggleMenu}>
+      <MobileNavigationMenuIcon onClick={toggleMenu} aria-label={`${isOpen ? 'close navigation menu' : 'open navigation menu'}`}>
         <div className={`${isOpen ? closeIcon : openIcon}`}></div>
       </MobileNavigationMenuIcon>
 
