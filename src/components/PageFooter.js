@@ -113,6 +113,7 @@ const SocialLinks = styled.div`
   width: 85%;
 
   color: var(--text-color);
+
   a:hover {
     color: var(--text-color);
   }
@@ -120,6 +121,14 @@ const SocialLinks = styled.div`
     color: var(--text-color);
   }
   a:visited {
+    color: var(--text-color);
+  }
+
+  a:visited {
+    color: var(--text-color);
+  }
+
+  a span {
     color: var(--text-color);
   }
 `;
