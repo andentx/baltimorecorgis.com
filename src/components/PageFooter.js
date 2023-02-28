@@ -277,7 +277,7 @@ const PageFooter = () => {
           <FooterSectionTitle>Contact</FooterSectionTitle>
           <EmailLink href='mailto:baltimorecorgis@gmail.com'>baltimorecorgis@gmail.com</EmailLink>
           <SocialLinks>
-            <Link1 href=''>
+            <Link1 href='https://www.facebook.com/groups/BaltimoreCorgis'>
               <svg xmlns='http://www.w3.org/2000/svg' width='1800' zoomAndPan='magnify' viewBox='0 0 1350 1349.999938' height='1800' preserveAspectRatio='xMidYMid meet' version='1.0'>
                 <path
                   fill='#fefefe'
@@ -288,7 +288,7 @@ const PageFooter = () => {
               </svg>
             </Link1>
 
-            <Link2 href=''>
+            <Link2 href='https://www.instagram.com/baltimorecorgis/'>
               <svg xmlns='http://www.w3.org/2000/svg' width='1800' zoomAndPan='magnify' viewBox='0 0 1350 1349.999938' height='1800' preserveAspectRatio='xMidYMid meet' version='1.0'>
                 <path
                   fill='#fefefe'
