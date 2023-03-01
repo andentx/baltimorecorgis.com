@@ -6,12 +6,12 @@ import SectionTitle from '../components/SectionTitle';
 export const Head = () => (
   <>
     <title>Baltimore Corgis | Tickets</title>
-    <meta name='description' content='Baltimore Corgis' />
+    <meta name='description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
     <meta name='author' content='Andrew' />
 
     <meta property='og:title' content='Baltimore Corgis' />
-    <meta property='og:description' content='Baltimore Corgis' />
-    <meta property='og:image' content='' />
+    <meta property='og:description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
+    <meta property='og:image' content='https://stirring-donut-90169b.netlify.app/images/og-image.png' />
     <meta property='og:image:alt' content='A screenshot of the Baltimore Corgis website' />
     <meta property='og:locale' content='en_US' />
     <meta property='og:type' content='website' />

@@ -9,12 +9,12 @@ import SectionTitle from '../components/SectionTitle';
 export const Head = () => (
   <>
     <title>Baltimore Corgis | Rules</title>
-    <meta name='description' content='Baltimore Corgis' />
+    <meta name='description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
     <meta name='author' content='Andrew' />
 
     <meta property='og:title' content='Baltimore Corgis' />
-    <meta property='og:description' content='Baltimore Corgis' />
-    <meta property='og:image' content='' />
+    <meta property='og:description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
+    <meta property='og:image' content='https://stirring-donut-90169b.netlify.app/images/og-image.png' />
     <meta property='og:image:alt' content='A screenshot of the Baltimore Corgis website' />
     <meta property='og:locale' content='en_US' />
     <meta property='og:type' content='website' />
@@ -97,7 +97,8 @@ const groupRules = [
   {
     id: 3,
     title: 'In Search of Corgi Posts',
-    description: 'ISO posts may not be allowed commenting in order to avoid publicizing the promotion of breeders. Do not use language that promotes buying, selling, or breeders in your post or it will be denied.',
+    description:
+      'ISO posts may not be allowed commenting in order to avoid publicizing the promotion of breeders. Do not use language that promotes buying, selling, or breeders in your post or it will be denied.',
   },
   {
     id: 4,
@@ -107,7 +108,8 @@ const groupRules = [
   {
     id: 5,
     title: 'Corgi Only Promotions',
-    description: 'Promotions are only allowed if they are supporting a local business and are specifically Corgi related. (i.e. Your corgis Instagram or Facebook page, Etsy for Corgi items, or Corgi-related events.)',
+    description:
+      'Promotions are only allowed if they are supporting a local business and are specifically Corgi related. (i.e. Your corgis Instagram or Facebook page, Etsy for Corgi items, or Corgi-related events.)',
   },
   {
     id: 6,
@@ -146,7 +148,6 @@ const eventRules = [
     title: 'Clean Up After Your Dog',
     description: 'Please keep an eye on your dog and clean up after them. In most cases, there will be supplies such as paper towels, spray, poop bags, trash cans, etc.',
   },
-
 ];
 
 const RulesPage = () => {
