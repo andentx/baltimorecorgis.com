@@ -195,8 +195,6 @@ const Button = styled.a`
     border: 2px solid var(--focus-color);
     border-radius: 18px;
   }
-
-  margin-bottom: 15rem;
 `;
 
 const ButtonInnerContent = styled.p`

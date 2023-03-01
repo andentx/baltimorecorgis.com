@@ -72,7 +72,7 @@ const MainContent = styled.main`
   width: 100%;
   max-width: 2000px;
 
-  /* padding-top: min(5vw, 3rem); */
+  padding-bottom: 15rem;
 
   display: flex;
   flex-direction: column;

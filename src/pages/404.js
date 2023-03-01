@@ -79,8 +79,6 @@ const Container = styled.div`
   h2 {
     margin-bottom: 2rem;
   }
-
-  margin-bottom: 15rem;
 `;
 
 const AboutPage = () => {
