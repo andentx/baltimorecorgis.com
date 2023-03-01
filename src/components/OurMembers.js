@@ -293,7 +293,7 @@ const OurMembers = () => {
         {dogData.map((dog) => {
           if (dog.url) {
             return (
-              <GridCellLink key={dog.id} href={dog.url} aria-label={dog.text}>
+              <GridCellLink key={dog.id} href={dog.url}>
                 <Photo>{dog.photo}</Photo>
                 <Name>{dog.name}</Name>
                 <Subtitle>{dog.subtitle}</Subtitle>
@@ -301,7 +301,7 @@ const OurMembers = () => {
             );
           } else {
             return (
-              <GridCell key={dog.id} aria-label={dog.text}>
+              <GridCell key={dog.id}>
                 <Photo>{dog.photo}</Photo>
                 <Name>{dog.name}</Name>
                 <Subtitle>{dog.subtitle}</Subtitle>

@@ -263,7 +263,7 @@ const BestSellers = () => {
 
       <ProductGrid>
         {productData.map((product) => (
-          <GridCell key={product.id} href={product.url} aria-label={product.text}>
+          <GridCell key={product.id} href={product.url}>
             <Photo>{product.photo}</Photo>
             <Name>{product.name}</Name>
             <Subtitle>{product.subtitle}</Subtitle>
