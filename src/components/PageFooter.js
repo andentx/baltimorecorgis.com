@@ -9,6 +9,8 @@ const Footer = styled.footer`
   /* background-color: red; */
   color: var(--text-color);
 
+  border-top: 2px solid var(--off-white);
+
   width: 100%;
 
   padding: 1rem;
