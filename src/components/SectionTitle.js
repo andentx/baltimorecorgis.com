@@ -9,8 +9,6 @@ const Title = styled.h2`
   padding-top: 2.5rem;
 
   margin: 0 1.5rem 1rem 1.5rem;
-
-  font-family: 'Gill Sans Custom', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const SectionTitle = ({ children }) => {
