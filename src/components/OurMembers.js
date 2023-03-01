@@ -55,7 +55,7 @@ const GridCellLink = styled.a`
     bottom: -2px;
     left: -2px;
     border: 2px solid var(--focus-color);
-    border-radius: 15px;
+    border-radius: 20px;
   }
 
   transition: color 200ms;

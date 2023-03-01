@@ -19,7 +19,7 @@ const StyledLink = styled(GatsbyLink)`
     bottom: -2px;
     left: -2px;
     border: 2px solid var(--focus-color);
-    border-radius: 12px;
+    border-radius: 10px;
   }
 `;
 

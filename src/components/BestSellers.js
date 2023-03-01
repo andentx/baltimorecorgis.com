@@ -57,7 +57,7 @@ const GridCell = styled.a`
     bottom: -2px;
     left: -2px;
     border: 2px solid var(--focus-color);
-    border-radius: 15px;
+    border-radius: 22.5px;
   }
 
   transition: color 200ms;

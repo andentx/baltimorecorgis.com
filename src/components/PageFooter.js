@@ -88,7 +88,7 @@ const EmailLink = styled.a`
     bottom: -2px;
     left: -2px;
     border: 2px solid var(--focus-color);
-    border-radius: 7.5px;
+    border-radius: 10px;
   }
 `;
 
@@ -267,7 +267,7 @@ const FooterLink = styled(GatsbyLink)`
     bottom: -2px;
     left: -2px;
     border: 2px solid var(--focus-color);
-    border-radius: 7.5px;
+    border-radius: 10px;
   }
 `;
 
