@@ -22,13 +22,10 @@ const GlobalColor = createGlobalStyle`
     --text-color-hover: var(--off-white-darker);
     --text-color-hover: hsl(264, 36%, 81%);
 
-    --accent-color: hotpink;
     --focus-color: var(--off-white-darker);
     
     /* color assignments */
     --page-header-background-color: var(--baltimore-purple);
-
-    --page-header-logo-color: red;
 
     --nav-menu-open-icon-color: var(--off-white);
     --nav-menu-close-icon-color: var(--off-white);
