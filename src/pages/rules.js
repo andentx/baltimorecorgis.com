@@ -6,6 +6,8 @@ import Layout from '../components/Layout';
 
 import SectionTitle from '../components/SectionTitle';
 
+import VerticalSpacer from '../components/VerticalSpacer';
+
 export const Head = () => (
   <>
     <title>Baltimore Corgis | Rules</title>
@@ -75,12 +77,6 @@ const TextContainer = styled.div`
     font-weight: 200;
     word-wrap: break-word;
   }
-`;
-
-const VerticalSpacer = styled.div`
-  /* background-color: red; */
-  height: 2rem;
-  width: 100%;
 `;
 
 const groupRules = [
@@ -154,6 +150,7 @@ const RulesPage = () => {
   return (
     <>
       <Layout>
+        <VerticalSpacer />
         <SectionTitle>Group Rules</SectionTitle>
         <VerticalSpacer />
 
