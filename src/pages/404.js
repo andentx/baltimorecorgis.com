@@ -1,8 +1,10 @@
-import * as React from "react";
-import Layout from "../components/Layout";
+import * as React from 'react';
+import Layout from '../components/Layout';
 
-import styled from "styled-components";
-import { Link } from "gatsby";
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+
+import SectionTitle from '../components/SectionTitle.js';
 
 export const Head = () => (
   <>
@@ -31,6 +33,54 @@ const Container = styled.div`
   align-items: center;
 
   text-align: center;
+
+  color: var(--text-color);
+
+  transition: color 200ms;
+
+  a {
+    color: var(--text-color);
+
+    :link {
+      color: var(--text-color);
+    }
+
+    :visited {
+      color: var(--text-color);
+    }
+
+    :hover {
+      color: hsl(0, 0%, 70%);
+    }
+
+    :active {
+      color: var(--text-color);
+    }
+
+    padding: 0.5rem 1rem;
+    position: relative;
+
+    :focus-visible {
+      outline: none;
+    }
+
+    :focus-visible::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      border: 2px solid var(--focus-color);
+      border-radius: 10px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  margin-bottom: 15rem;
 `;
 
 const AboutPage = () => {
@@ -38,9 +88,9 @@ const AboutPage = () => {
     <>
       <Layout>
         <Container>
-          <h1>404</h1>
+          <SectionTitle>404</SectionTitle>
           <h2>Page not found</h2>
-          <Link to='/'>Go home</Link>
+          <Link to='/'>Click to here go to Home page</Link>
         </Container>
       </Layout>
     </>
