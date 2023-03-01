@@ -54,17 +54,17 @@ const GlobalReset = createGlobalStyle`
 const FontStyles = createGlobalStyle`
   @font-face {
     font-family: 'Gill Sans Custom';
-    /* font-display: swap; */
+    font-display: swap;
     src: url(/fonts/GillSansCustom.woff2) format("woff2");
   }
   @font-face {
     font-family: 'Montserrat Light';
-    /* font-display: swap; */
+    font-display: swap;
     src: url(/fonts/MontserratLight.woff2) format("woff2");
   }
   @font-face {
     font-family: 'Montserrat Regular';
-    /* font-display: swap; */
+    font-display: swap;
     src: url(/fonts/MontserratRegular.woff2) format("woff2");
   }
 `;
