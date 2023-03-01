@@ -190,7 +190,7 @@ const CorgiOfTheMonth = () => {
       <HorizontalContainer>
         <TopFrame>
           <PhotoContainer>
-            <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' placeholder='blurred' />
+            <StaticImage height={1125} width={602} src='../images/phone.png' alt='A mobile phone displaying The Baltimore Corgis Instagram page' placeholder='blurred' />
           </PhotoContainer>
         </TopFrame>
         <BottomFrame>
@@ -205,7 +205,7 @@ const CorgiOfTheMonth = () => {
 
       <VerticalContainer>
         <VerticalPhotoContainer>
-          <StaticImage height={1125} width={602} src='../images/phone.png' alt='A phone' placeholder='blurred' />
+          <StaticImage height={1125} width={602} src='../images/phone.png' alt='A mobile phone displaying The Baltimore Corgis Instagram page' placeholder='blurred' />
         </VerticalPhotoContainer>
         <TextContainer>
           <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
