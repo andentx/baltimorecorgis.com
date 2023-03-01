@@ -21,3 +21,8 @@
   font-display: swap;
   src: url(/fonts/MontserratRegular.woff2) format('woff2');
 }
+
+html,
+body {
+  background-color: hsl(264, 36%, 31%);
+}
