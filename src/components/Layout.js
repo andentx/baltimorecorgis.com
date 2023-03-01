@@ -76,10 +76,10 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  font-family: 'Montserrat Regular', sans-serif;
+  font-family: 'Montserrat Regular';
 
   h2 {
-    font-family: 'Gill Sans Custom', sans-serif;
+    font-family: 'Gill Sans Custom';
   }
 `;
 

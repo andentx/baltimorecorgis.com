@@ -286,7 +286,7 @@ const BottomContainer = styled.div`
 
   p {
     font-size: 0.9rem;
-    font-family: 'Montserrat Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat Light';
   }
 `;
 
