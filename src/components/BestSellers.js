@@ -201,7 +201,7 @@ const Button = styled.a`
 
 const ButtonInnerContent = styled.p`
   background-color: var(--baltimore-purple);
-  color: white;
+  color: var(--off-white);
 
   border-radius: 10px;
 

@@ -59,7 +59,7 @@ const ContactContainer = styled.div`
 
 const EmailLink = styled.a`
   /* background-color: pink; */
-  color: white;
+  color: var(--off-white);
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -145,7 +145,7 @@ const Link1 = styled.a`
 
   svg {
     path {
-      fill: white;
+      fill: var(--off-white);
       transition: fill 200ms;
     }
   }
@@ -192,7 +192,7 @@ const Link2 = styled.a`
 
   svg {
     path {
-      fill: white;
+      fill: var(--off-white);
       transition: fill 200ms;
     }
   }

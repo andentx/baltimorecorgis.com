@@ -94,7 +94,7 @@ const TextContainer = styled.div`
 
 const Text = styled.p`
   /* background-color: yellow; */
-  color: white;
+  color: var(--off-white);
 
   text-align: center;
   width: 60%;
@@ -142,7 +142,7 @@ const Button = styled.a`
 `;
 
 const ButtonInnerContent = styled.p`
-  background-color: white;
+  background-color: var(--off-white);
   color: var(--baltimore-purple);
 
   border-radius: 10px;
