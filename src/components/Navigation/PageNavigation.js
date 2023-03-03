@@ -241,11 +241,16 @@ const PageNavigation = () => {
     },
     {
       id: 3,
+      text: 'tickets',
+      url: '/tickets',
+    },
+    {
+      id: 4,
       text: 'shop',
       url: 'https://baltimore-corgis.creator-spring.com/',
     },
     {
-      id: 4,
+      id: 5,
       text: 'contact',
       url: '/#contact',
     },
