@@ -47,7 +47,7 @@ const QRLink = styled.a`
   aspect-ratio: 1/1;
 
   padding: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   position: relative;
 
@@ -91,7 +91,7 @@ const RoundedSquare = styled.div`
   background-color: var(--baltimore-purple);
 
   width: 100%;
-  aspect-ratio: 1/1;
+  min-height: 24rem;
 
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ const QRCode = styled.div`
   width: min(12rem, 100%);
   aspect-ratio: 1/1;
 
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   svg {
     rect {
@@ -155,6 +155,8 @@ const QRCode = styled.div`
 const Name = styled.div`
   height: 2rem;
 
+  margin-bottom: 0.5rem;
+
   p {
     font-size: 1.2rem;
     color: var(--off-white);
@@ -163,6 +165,8 @@ const Name = styled.div`
 
 const Subtitle = styled.div`
   height: 1rem;
+
+  margin-bottom: 0.5rem;
 
   p {
     font-size: 1rem;
