@@ -3,6 +3,7 @@ import * as React from 'react';
 import Layout from '../components/Layout';
 import SectionTitle from '../components/SectionTitle';
 import VerticalSpacer from '../components/VerticalSpacer';
+import TicketSection from '../components/TicketSection';
 
 export const Head = () => (
   <>
@@ -29,9 +30,7 @@ const TicketsPage = () => {
     <>
       <Layout>
         <VerticalSpacer />
-
-        <SectionTitle>Tickets</SectionTitle>
-        <p>Coming soon!</p>
+        <TicketSection />
       </Layout>
     </>
   );
