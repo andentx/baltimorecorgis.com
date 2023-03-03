@@ -91,7 +91,7 @@ const RoundedSquare = styled.div`
   background-color: var(--baltimore-purple);
 
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1/1;
 
   display: flex;
   flex-direction: column;
