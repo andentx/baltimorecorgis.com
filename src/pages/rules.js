@@ -28,7 +28,7 @@ export const Head = () => (
   </>
 );
 
-const Rule = styled.a`
+const Rule = styled.div`
   /* background-color: darkred; */
   color: var(--text-color);
 
