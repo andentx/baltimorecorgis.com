@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import Layout from '../components/Layout';
-import SectionTitle from '../components/SectionTitle';
 import VerticalSpacer from '../components/VerticalSpacer';
+import EventsSection from '../components/EventsSection';
 
 export const Head = () => (
   <>
@@ -29,8 +29,7 @@ const RulesPage = () => {
     <>
       <Layout>
         <VerticalSpacer />
-        <SectionTitle>Events</SectionTitle>
-        <p>Coming soon!</p>
+        <EventsSection />
       </Layout>
     </>
   );
