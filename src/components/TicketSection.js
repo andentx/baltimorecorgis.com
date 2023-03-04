@@ -187,7 +187,7 @@ const TicketSection = () => {
         <li>Wait for confirmation (within 24 hours)</li>
       </List>
       <QRContainer>
-        <QRLink href=''>
+        <QRLink href='https://www.paypal.com/paypalme/BaltimoreCorgis'>
           <RoundedSquare>
             <ServiceIcon>
               <svg xmlns='http://www.w3.org/2000/svg' zoomAndPan='magnify' viewBox='0 0 900 299.999988' preserveAspectRatio='xMidYMid meet' version='1.0'>
@@ -248,7 +248,7 @@ const TicketSection = () => {
             </Name>
           </RoundedSquare>
         </QRLink>
-        <QRLink href=''>
+        <QRLink href='https://account.venmo.com/u/BaltimoreCorgis'>
           <RoundedSquare>
             <ServiceIcon>
               <svg xmlns='http://www.w3.org/2000/svg' zoomAndPan='magnify' viewBox='0 0 900 299.999988' preserveAspectRatio='xMidYMid meet' version='1.0'>
