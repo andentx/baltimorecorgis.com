@@ -43,6 +43,8 @@ const Rule = styled.div`
 const NumberContainer = styled.div`
   /* background-color: orange; */
 
+  font-family: 'Chunk Five';
+
   flex-shrink: 0;
 
   height: 6rem;
