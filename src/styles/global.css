@@ -22,6 +22,14 @@
   src: url(/fonts/MontserratRegular.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Chunk Five';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/ChunkFive.woff2) format('woff2');
+}
+
 html,
 body {
   background-color: hsl(264, 36%, 31%);
