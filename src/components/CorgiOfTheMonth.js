@@ -14,7 +14,7 @@ const HorizontalContainer = styled.div`
 
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
@@ -31,7 +31,7 @@ const TopFrame = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     justify-content: center;
     position: relative;
     bottom: 235px;
@@ -78,16 +78,16 @@ const TextContainer = styled.div`
 
   border-radius: 20px;
 
-  width: 80%;
+  width: min(90%, 1000px);
 
-  padding: 1.5rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     width: 90%;
   }
 `;
@@ -104,7 +104,7 @@ const Text = styled.p`
 
   margin-bottom: 1.5rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     width: 100%;
   }
 `;
@@ -171,7 +171,7 @@ const VerticalContainer = styled.div`
 
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     display: flex;
   }
 `;
