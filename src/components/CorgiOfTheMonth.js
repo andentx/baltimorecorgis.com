@@ -82,6 +82,8 @@ const TextContainer = styled.div`
 
   padding: 1.5rem 3rem 1.5rem 3rem;
 
+  margin-left: 3rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +91,7 @@ const TextContainer = styled.div`
 
   @media screen and (max-width: 780px) {
     width: 90%;
+    margin-left: 0rem;
   }
 `;
 
