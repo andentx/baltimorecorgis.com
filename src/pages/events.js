@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 import VerticalSpacer from '../components/VerticalSpacer';
 import EventsSection from '../components/EventsSection';
 
+import { allEvents, upcomingEvents, pastEvents } from '../data/events';
+
 export const Head = () => (
   <>
     <title>Baltimore Corgis | Events</title>
@@ -24,15 +26,16 @@ export const Head = () => (
   </>
 );
 
-const RulesPage = () => {
+const EventsPage = () => {
   return (
     <>
       <Layout>
         <VerticalSpacer />
-        <EventsSection />
+        <EventsSection events={upcomingEvents} title='Upcoming Events' />
+        <EventsSection events={pastEvents} title='Past Events' />
       </Layout>
     </>
   );
 };
 
-export default RulesPage;
+export default EventsPage;
