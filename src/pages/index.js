@@ -94,12 +94,12 @@ const IndexPage = () => {
         <HorizontalDivider />
         <CorgiOfTheMonth />
         <HorizontalDivider />
-        <BestSellers />
-        <HorizontalDivider />
         <EventsSection events={nextThreeEvents} title='Upcoming Events' />
         <Button to='/events'>
           <ButtonInnerContent>VIEW ALL EVENTS</ButtonInnerContent>
         </Button>
+        <HorizontalDivider />
+        <BestSellers />
       </Layout>
     </>
   );
