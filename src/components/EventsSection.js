@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StaticImage } from 'gatsby-plugin-image';
+import { allEvents } from '../data/events';
 
 import styled from 'styled-components';
 
@@ -141,7 +141,7 @@ const ButtonContainer = styled.div`
   flex-shrink: 0;
 `;
 
-const Button = styled.a`
+const ButtonUpcoming = styled.a`
   background: none;
 
   display: flex;
@@ -168,83 +168,72 @@ const Button = styled.a`
     border: 2px solid var(--focus-color);
     border-radius: 18px;
   }
-`;
 
-const ButtonInnerContent = styled.p`
-  background-color: var(--baltimore-purple);
-  color: var(--off-white);
+  p {
+    background-color: var(--baltimore-purple);
+    color: var(--off-white);
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  width: 12rem;
+    width: 12rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 
-  padding: 1rem 2rem;
+    padding: 1rem 2rem;
 
-  transition: background-color 200ms;
+    transition: background-color 200ms;
 
-  :hover {
-    background-color: hsl(264, 36%, 36%);
+    :hover {
+      background-color: hsl(264, 36%, 36%);
+    }
   }
 `;
 
-const eventData = [
-  {
-    id: 1,
-    title: 'Valentines Day Party',
-    month: 'FEB',
-    day: '14',
-    year: '2023',
-    dateString: 'February 14th, 2023',
-    startTime: '1:00 PM',
-    endTime: '2:00 PM',
-    venue: 'Venue Name',
-    city: 'Westminster',
-    state: 'MD',
-    admissionPrice: '$15',
-    buttonText: 'BUY TICKETS',
-    url: '/tickets',
-    photo: <StaticImage src='../images/dogs/cooper.jpg' height={180} width={180} alt={`A photo of Cooper, a red and white Pembroke Welsh Corgi.`} />,
-  },
-  {
-    id: 2,
-    title: "Cooper's Ugly Sweater Birthday",
-    month: 'JUN',
-    day: '13',
-    year: '2023',
-    dateString: 'June 13th, 2023',
-    startTime: '11:30 AM',
-    endTime: '12:00 PM',
-    venue: 'A Very Extremely Long Venue Name',
-    city: 'Havre de Grace',
-    state: 'MD',
-    admissionPrice: 'Free',
-    buttonText: 'FREE',
-    photo: <StaticImage src='../images/dogs/cooper.jpg' height={180} width={180} alt={`A photo of Cooper, a red and white Pembroke Welsh Corgi.`} />,
-  },
-];
+const ButtonPast = styled.div`
+  background: none;
 
-const EventsSection = () => {
+  display: flex;
+
+  border-radius: 18px;
+
+  padding: 0.5rem;
+
+  p {
+    background-color: grey;
+    color: var(--off-white);
+
+    border-radius: 10px;
+
+    width: 12rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    padding: 1rem 2rem;
+  }
+`;
+
+const EventsSection = ({ events, title }) => {
   return (
     <>
-      <SectionTitle>Events</SectionTitle>
+      <SectionTitle>{title}</SectionTitle>
 
       <EventList>
-        {eventData.map((event) => {
+        {events.map((event) => {
           return (
             <EventContainer key={event.id}>
               <PhotoContainer>{event.photo}</PhotoContainer>
-
               <DateContainer>
                 <Day>{event.day}</Day>
                 <Month>{event.month}</Month>
               </DateContainer>
-
               <InfoContainer>
                 <Title>{event.title}</Title>
                 <DateString>{event.dateString}</DateString>
@@ -257,11 +246,16 @@ const EventsSection = () => {
                 </Location>
                 <Admission>Admission: {event.admissionPrice}</Admission>
               </InfoContainer>
-
               <ButtonContainer>
-                <Button href={event.url}>
-                  <ButtonInnerContent>{event.buttonText}</ButtonInnerContent>
-                </Button>
+                {title === 'Past Events' ? (
+                  <ButtonPast>
+                    <p>PAST</p>
+                  </ButtonPast>
+                ) : (
+                  <ButtonUpcoming href={event.url}>
+                    <p>{event.buttonText}</p>
+                  </ButtonUpcoming>
+                )}
               </ButtonContainer>
             </EventContainer>
           );
