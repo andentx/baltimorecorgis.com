@@ -50,8 +50,9 @@ export const allEvents = [
     venue: 'A Very Extremely Long Venue Name',
     city: 'Havre de Grace',
     state: 'MD',
-    admissionPrice: 'Free',
-    buttonText: 'FREE',
+    admissionPrice: '$20',
+    buttonText: 'BUY TICKETS',
+    url: '/tickets',
     photo: <StaticImage src='../images/dogs/cooper.jpg' height={180} width={180} alt={`A photo of Cooper, a red and white Pembroke Welsh Corgi.`} />,
   },
   {
@@ -67,8 +68,9 @@ export const allEvents = [
     venue: 'A Very Extremely Long Venue Name',
     city: 'Havre de Grace',
     state: 'MD',
-    admissionPrice: 'Free',
-    buttonText: 'FREE',
+    admissionPrice: '$30',
+    buttonText: 'BUY TICKETS',
+    url: '/tickets',
     photo: <StaticImage src='../images/dogs/cooper.jpg' height={180} width={180} alt={`A photo of Cooper, a red and white Pembroke Welsh Corgi.`} />,
   },
   {
