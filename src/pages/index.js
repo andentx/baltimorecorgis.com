@@ -7,6 +7,9 @@ import OurMembers from '../components/OurMembers';
 import HorizontalDivider from '../components/HorizontalDivider';
 import CorgiOfTheMonth from '../components/CorgiOfTheMonth';
 import BestSellers from '../components/BestSellers';
+import EventsSection from '../components/EventsSection';
+
+import { nextThreeEvents } from '../data/events';
 
 export const Head = () => (
   <>
@@ -40,6 +43,8 @@ const IndexPage = () => {
         <CorgiOfTheMonth />
         <HorizontalDivider />
         <BestSellers />
+        <HorizontalDivider />
+        <EventsSection events={nextThreeEvents} title='Upcoming Events' />
       </Layout>
     </>
   );
