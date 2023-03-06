@@ -12,6 +12,8 @@ const EventList = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-bottom: 3rem;
 `;
 
 const EventContainer = styled.div`
