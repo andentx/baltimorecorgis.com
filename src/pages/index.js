@@ -1,5 +1,9 @@
 import * as React from 'react';
 
+import styled from 'styled-components';
+
+import { Link as GatsbyLink } from 'gatsby';
+
 import Layout from '../components/Layout';
 import GroupPhoto from '../components/GroupPhoto';
 import AboutUs from '../components/AboutUs';
@@ -31,6 +35,54 @@ export const Head = () => (
   </>
 );
 
+const Button = styled(GatsbyLink)`
+  background: none;
+
+  display: flex;
+
+  border-radius: 18px;
+
+  padding: 0.5rem;
+
+  position: relative;
+
+  outline: none;
+
+  :focus-visible {
+    outline: none;
+  }
+
+  :focus-visible::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid var(--focus-color);
+    border-radius: 18px;
+  }
+
+  margin-bottom: 5rem;
+`;
+
+const ButtonInnerContent = styled.p`
+  background-color: var(--baltimore-purple);
+  color: var(--off-white);
+
+  border-radius: 10px;
+
+  font-size: 1.2rem;
+
+  padding: 1rem 2rem;
+
+  transition: background-color 200ms;
+
+  :hover {
+    background-color: hsl(264, 36%, 36%);
+  }
+`;
+
 const IndexPage = () => {
   return (
     <>
@@ -45,6 +97,9 @@ const IndexPage = () => {
         <BestSellers />
         <HorizontalDivider />
         <EventsSection events={nextThreeEvents} title='Upcoming Events' />
+        <Button to='/events'>
+          <ButtonInnerContent>VIEW ALL EVENTS</ButtonInnerContent>
+        </Button>
       </Layout>
     </>
   );
