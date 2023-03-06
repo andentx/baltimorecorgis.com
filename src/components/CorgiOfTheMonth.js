@@ -8,7 +8,7 @@ const HorizontalContainer = styled.div`
   /* background-color: darkred; */
 
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
 
   display: grid;
 
@@ -71,6 +71,8 @@ const BottomFrame = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding-left: 3rem;
 `;
 
 const TextContainer = styled.div`
@@ -78,11 +80,11 @@ const TextContainer = styled.div`
 
   border-radius: 20px;
 
-  width: min(90%, 1000px);
+  /* width: min(100%, 1000px); */
+  width: 100%;
+  max-width: 952px;
 
   padding: 1.5rem 3rem 1.5rem 3rem;
-
-  margin-left: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -91,7 +93,6 @@ const TextContainer = styled.div`
 
   @media screen and (max-width: 780px) {
     width: 90%;
-    margin-left: 0rem;
   }
 `;
 
