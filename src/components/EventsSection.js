@@ -54,7 +54,7 @@ const PhotoContainer = styled.div`
   flex-shrink: 0;
 
   div:first-of-type {
-    border: 3px solid var(--baltimore-purple);
+    border: 2px solid var(--baltimore-purple);
     border-radius: 10px;
   }
 
