@@ -32,12 +32,15 @@ const EventContainer = styled.div`
     padding: 1rem 1rem 1rem 1rem;
 
     display: grid;
-    grid-template-columns: 7rem 1fr;
+    grid-template-columns: 8rem 1fr;
     grid-template-rows: 1fr 7rem;
     grid-auto-flow: row;
     grid-template-areas:
       'date info info'
       'button button button';
+  }
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 7rem 1fr;
   }
 
   margin-bottom: 2rem;
@@ -66,7 +69,9 @@ const PhotoContainer = styled.div`
 `;
 
 const DateContainer = styled.div`
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+
+  width: 9rem;
 
   display: flex;
   flex-direction: column;
@@ -75,7 +80,8 @@ const DateContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     grid-area: date;
-    padding: 0rem;
+    width: 6rem;
+    margin-right: 1rem;
   }
 `;
 
@@ -88,6 +94,10 @@ const Day = styled.div`
   text-align: center;
 
   margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 800px) {
+    font-size: 3rem;
+  }
 `;
 
 const Month = styled.div`
