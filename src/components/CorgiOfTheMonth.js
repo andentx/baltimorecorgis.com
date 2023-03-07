@@ -93,6 +93,7 @@ const TextContainer = styled.div`
 
   @media screen and (max-width: 780px) {
     width: 90%;
+    padding: 2rem;
   }
 `;
 
@@ -163,11 +164,8 @@ const ButtonInnerContent = styled.p`
 `;
 
 const VerticalContainer = styled.div`
-  /* background-color: red; */
   width: 100%;
   min-height: 1rem;
-
-  width: 95%;
 
   display: none;
   flex-direction: column;
