@@ -178,7 +178,7 @@ export const allEvents = [
     state: 'DC',
     admissionPrice: 'Free',
     buttonText: 'FREE',
-    photo: <StaticImage src='../images/event-photos/2023/2023-corgis-at-the-bloom.jpeg' height={180} width={180} alt={`A photo of a large group of corgis with their owners in front of the Jefferson Memorial.`} />,
+    photo: <StaticImage src='../images/event-photos/2023/2023-corgis-at-the-bloom.jpg' height={180} width={180} alt={`A photo of a large group of corgis with their owners in front of the Jefferson Memorial.`} />,
   },
   {
     id: 11,
@@ -230,7 +230,7 @@ export const allEvents = [
     state: 'MD',
     admissionPrice: 'TBA',
     buttonText: 'UPCOMING',
-    photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-1.jpeg' height={180} width={180} alt={`A photo of a two corgis hanging out by a bone shaped pool at a dog resort.`} />,
+    photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-1.jpg' height={180} width={180} alt={`A photo of a two corgis hanging out by a bone shaped pool at a dog resort.`} />,
   },
   {
     id: 14,
