@@ -251,7 +251,7 @@ const EventsSection = ({ events, title }) => {
               <ButtonContainer>
                 {title === 'Past Events' ? (
                   <ButtonPast>
-                    <p>PAST</p>
+                    <p>ENDED</p>
                   </ButtonPast>
                 ) : (
                   <ButtonUpcoming href={event.url}>
