@@ -30,7 +30,6 @@
   src: url(/fonts/ChunkFive.woff2) format('woff2');
 }
 
-html,
-body {
+html {
   background-color: hsl(264, 36%, 31%);
 }
