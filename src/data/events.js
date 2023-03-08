@@ -191,18 +191,18 @@ export const allEvents = [
     buttonText: 'FREE',
     photo: <StaticImage src='../images/event-photos/2023/2023-pwccp-corgi-fun-fair.jpg' height={180} width={180} alt={`A photo of corgis lined up during a hot dog eating contest at the Corgi Fun Fair.`} />,
   },
-  {
-    id: 16,
-    title: 'Corgi Pool Party, Pt 2',
-    startTime: new Date('2023-07-01T16:00:00'),
-    endTime: new Date('2023-07-01T18:00:00'),
-    venue: 'Dogwood Acres Pet Retreat',
-    city: 'Davidsonville',
-    state: 'MD',
-    admissionPrice: 'TBA',
-    buttonText: 'UPCOMING',
-    photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-2.jpg' height={180} width={180} alt={`A photo of a corgis by a pool at a dog resort.`} />,
-  },
+  // {
+  //   id: 16,
+  //   title: 'Corgi Pool Party, Pt 2',
+  //   startTime: new Date('2023-07-01T16:00:00'),
+  //   endTime: new Date('2023-07-01T18:00:00'),
+  //   venue: 'Dogwood Acres Pet Retreat',
+  //   city: 'Davidsonville',
+  //   state: 'MD',
+  //   admissionPrice: 'TBA',
+  //   buttonText: 'UPCOMING',
+  //   photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-2.jpg' height={180} width={180} alt={`A photo of a corgis by a pool at a dog resort.`} />,
+  // },
 ];
 const now = new Date();
 
