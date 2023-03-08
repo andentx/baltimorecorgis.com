@@ -183,8 +183,7 @@ const ButtonUpcoming = styled.a`
     border-radius: 18px;
   }
 
-  /* styles for the <p> element when the <a> element has a URL */
-  &[href]:not([href='']) p {
+  p {
     background-color: var(--baltimore-purple);
     color: var(--off-white);
 
@@ -201,28 +200,12 @@ const ButtonUpcoming = styled.a`
     padding: 1rem 2rem;
 
     transition: background-color 200ms;
+  }
 
+  &[href]:not([href='']) p {
     :hover {
       background-color: var(--baltimore-purple-lighter);
     }
-  }
-
-  /* styles for the <p> element when the <a> element has no URL */
-  &:not([href]) p {
-    background-color: var(--baltimore-purple);
-    color: var(--off-white);
-
-    border-radius: 10px;
-
-    width: 12rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.2rem;
-
-    padding: 1rem 2rem;
   }
 `;
 
