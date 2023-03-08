@@ -39,7 +39,7 @@ export const allEvents = [
   },
   {
     id: 3,
-    title: "Corgis in the Maize",
+    title: 'Corgis in the Maize',
     date: '2022-11-6',
     month: 'NOV',
     day: '06',
@@ -57,7 +57,7 @@ export const allEvents = [
   },
   {
     id: 4,
-    title: "Corgis at Tail Lights",
+    title: 'Corgis at Tail Lights',
     date: '2022-12-13',
     month: 'DEC',
     day: '13',
@@ -75,7 +75,7 @@ export const allEvents = [
   },
   {
     id: 5,
-    title: "Corgi Christmas Sweater Party",
+    title: 'Corgi Christmas Sweater Party',
     date: '2022-12-18',
     month: 'DEC',
     day: '18',
@@ -93,7 +93,7 @@ export const allEvents = [
   },
   {
     id: 6,
-    title: "Pre-Race Corgi Party",
+    title: 'Pre-Race Corgi Party',
     date: '2023-01-22',
     month: 'JAN',
     day: '22',
@@ -111,7 +111,7 @@ export const allEvents = [
   },
   {
     id: 7,
-    title: "Baltimore Corgi Races",
+    title: 'Baltimore Corgi Races',
     date: '2023-01-28',
     month: 'JAN',
     day: '27',
@@ -129,7 +129,7 @@ export const allEvents = [
   },
   {
     id: 8,
-    title: "Corgi Valentines Day Party",
+    title: 'Corgi Valentines Day Party',
     date: '2023-02-12',
     month: 'FEB',
     day: '12',
@@ -147,7 +147,7 @@ export const allEvents = [
   },
   {
     id: 9,
-    title: "SniffSpot with the Lure",
+    title: 'SniffSpot with the Lure',
     date: '2023-03-04',
     month: 'MAR',
     day: '04',
@@ -165,7 +165,7 @@ export const allEvents = [
   },
   {
     id: 10,
-    title: "Corgis at the Bloom",
+    title: 'Corgis at the Bloom',
     date: '2023-03-26',
     month: 'MAR',
     day: '26',
@@ -182,7 +182,7 @@ export const allEvents = [
   },
   {
     id: 11,
-    title: "Corgi Easter Party",
+    title: 'Corgi Easter Party',
     date: '2023-04-16',
     month: 'APR',
     day: '16',
@@ -200,7 +200,7 @@ export const allEvents = [
   },
   {
     id: 12,
-    title: "Corgis & Snoballs",
+    title: 'Corgis & Snoballs',
     date: '2023-05-06',
     month: 'MAY',
     day: '06',
@@ -217,7 +217,7 @@ export const allEvents = [
   },
   {
     id: 13,
-    title: "Corgi Pool Party, Pt 1",
+    title: 'Corgi Pool Party, Pt 1',
     date: '2023-06-04',
     month: 'JUN',
     day: '04',
@@ -234,7 +234,7 @@ export const allEvents = [
   },
   {
     id: 14,
-    title: "Coopers 9th Birthday Stroll",
+    title: 'Coopers 9th Birthday Stroll',
     date: '2023-06-11',
     month: 'JUN',
     day: '13',
@@ -251,7 +251,7 @@ export const allEvents = [
   },
   {
     id: 15,
-    title: "PWCCP Corgi Fun Fair",
+    title: 'PWCCP Corgi Fun Fair',
     date: '2023-06-24',
     month: 'JUN',
     day: '24',
@@ -268,7 +268,7 @@ export const allEvents = [
   },
   {
     id: 16,
-    title: "Corgi Pool Party, Pt 2",
+    title: 'Corgi Pool Party, Pt 2',
     date: '2023-07-01',
     month: 'JUL',
     day: '??',
@@ -285,7 +285,7 @@ export const allEvents = [
   },
   {
     id: 17,
-    title: "Test Event",
+    title: 'Test Event',
     date: '2023-03-07',
     month: 'MAR',
     day: '08',
