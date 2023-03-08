@@ -103,6 +103,8 @@ const Day = styled.div`
 const Month = styled.div`
   text-align: center;
 
+  text-transform: uppercase;
+
   font-size: 1rem;
 `;
 
@@ -243,14 +245,14 @@ const EventsSection = ({ events, title }) => {
             <EventContainer key={event.id}>
               <PhotoContainer>{event.photo}</PhotoContainer>
               <DateContainer>
-                <Day>{event.day}</Day>
-                <Month>{event.month}</Month>
+                <Day>{event.startTime.getDate().toString().padStart(2, '0')}</Day>
+                <Month>{event.startTime.toLocaleString('en-US', { month: 'short' })}</Month>
               </DateContainer>
               <InfoContainer>
                 <Title>{event.title}</Title>
-                <DateString>{event.dateString}</DateString>
+                <DateString>{event.startTime.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</DateString>
                 <Time>
-                  {event.startTime} - {event.endTime}
+                  {event.startTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - {event.endTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
                 </Time>
                 <Venue>{event.venue}</Venue>
                 <Location>
