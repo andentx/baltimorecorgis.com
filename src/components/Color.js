@@ -8,6 +8,7 @@ const GlobalColor = createGlobalStyle`
     /* primary color */
     --baltimore-purple: hsl(264, 36%, 31%);
     --baltimore-purple-darker: hsl(264, 36%, 27%);
+    --baltimore-purple-lighter: hsl(264, 36%, 36%);
     
     /* black */
     --off-black: hsl(180, 2%, 8%);
