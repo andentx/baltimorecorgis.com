@@ -16,7 +16,7 @@ export const Head = () => (
 
     <meta property='og:title' content='Baltimore Corgis' />
     <meta property='og:description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
-    <meta property='og:image' content='https://stirring-donut-90169b.netlify.app/images/og-image.png' />
+    <meta property='og:image' content='https://www.baltimorecorgis.com/images/og-image.png' />
     <meta property='og:image:alt' content='A screenshot of the Baltimore Corgis website' />
     <meta property='og:locale' content='en_US' />
     <meta property='og:type' content='website' />
