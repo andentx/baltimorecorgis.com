@@ -51,6 +51,8 @@ const PhotoContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
 
+  border-radius: 12px;
+
   flex-shrink: 0;
 
   div:first-of-type {
@@ -61,6 +63,8 @@ const PhotoContainer = styled.div`
   * {
     height: 180px;
     width: 180px;
+
+    border-radius: 8px;
   }
 
   @media screen and (max-width: 800px) {
