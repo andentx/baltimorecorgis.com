@@ -29,7 +29,7 @@ const EventContainer = styled.div`
   padding: 1rem 0.5rem 1rem 1rem;
 
   @media screen and (max-width: 800px) {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1.78125rem 1rem 0rem 1rem;
 
     display: grid;
     grid-template-columns: 8rem 1fr;
