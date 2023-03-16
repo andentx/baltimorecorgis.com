@@ -29,7 +29,7 @@ export const Head = () => (
     <meta property='og:type' content='website' />
     <meta property='og:url' content='https://www.baltimorecorgis.com/' />
 
-    <meta name='twitter:card' content='summary' />
+    <meta name='twitter:card' content='summary_large_image' />
 
     <meta name='theme-color' content='hsl(264, 36%, 31%)' />
   </>
