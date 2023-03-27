@@ -219,8 +219,8 @@ export const allEvents = [
 ];
 const now = new Date();
 
-export const upcomingEvents = allEvents.filter((event) => event.endTime >= now).sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+export const upcomingEvents = [...allEvents.filter((event) => event.endTime >= now)].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
 
-export const pastEvents = allEvents.filter((event) => event.endTime < now).sort((a, b) => new Date(b.startTime) - new Date(a.startTime));
+export const pastEvents = [...allEvents.filter((event) => event.endTime < now)].sort((a, b) => new Date(b.startTime) - new Date(a.startTime));
 
 export const nextThreeEvents = upcomingEvents.slice(0, 3);
