@@ -140,7 +140,6 @@ export const allEvents = [
     state: 'MD',
     admissionPrice: 'Sold Out',
     buttonText: 'SOLD OUT',
-    url: '/tickets',
     photo: <StaticImage src='../images/event-photos/2023/2023-corgi-easter-party.jpg' height={180} width={180} alt={`A photo of Cooper, a red and white Pembroke Welsh Corgi.`} />,
   },
   {
@@ -178,7 +177,7 @@ export const allEvents = [
     state: 'MD',
     admissionPrice: 'On Sale Saturday 4/15',
     buttonText: 'BUY TICKETS',
-    // url: 'https://annapolis-corgi-club.ticketleap.com/5th-annual-corgi-pool-pawty/',
+    url: 'https://annapolis-corgi-club.ticketleap.com/5th-annual-corgi-pool-pawty/',
     photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-1.jpg' height={180} width={180} alt={`A photo of a two corgis hanging out by a bone shaped pool at a dog resort.`} />,
   },
   {
