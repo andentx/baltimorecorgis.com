@@ -175,7 +175,7 @@ export const allEvents = [
     venue: 'Dogwood Acres Pet Retreat',
     city: 'Davidsonville',
     state: 'MD',
-    admissionPrice: 'On Sale Saturday 4/15',
+    admissionPrice: '$30',
     buttonText: 'BUY TICKETS',
     url: 'https://annapolis-corgi-club.ticketleap.com/5th-annual-corgi-pool-pawty/',
     photo: <StaticImage src='../images/event-photos/2023/2023-corgi-pool-party-1.jpg' height={180} width={180} alt={`A photo of a two corgis hanging out by a bone shaped pool at a dog resort.`} />,
