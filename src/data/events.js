@@ -144,9 +144,9 @@ export const allEvents = [
   },
   {
     id: 12,
-    title: 'Sniffspot with the Lure',
-    startTime: new Date('2023-04-29T13:00:00'),
-    endTime: new Date('2023-04-29T15:00:00'),
+    title: 'Sniffspot with the Lure (Rescheduled)',
+    startTime: new Date('2023-05-07T12:00:00'),
+    endTime: new Date('2023-05-07T14:00:00'),
     venue: 'SniffSpot - Stable Dog Park',
     city: 'Monkton',
     state: 'MD',
