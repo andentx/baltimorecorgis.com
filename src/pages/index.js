@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import styled from 'styled-components';
 
+import { graphql } from 'gatsby';
 import { Link as GatsbyLink } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -83,14 +84,18 @@ const ButtonInnerContent = styled.p`
   }
 `;
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const allSanityMembers = data.allSanityMember.nodes;
+
+  const members = allSanityMembers;
+
   return (
     <>
       <Layout>
         <GroupPhoto />
         <AboutUs />
         <HorizontalDivider />
-        <OurMembers />
+        <OurMembers members={members} />
         <HorizontalDivider />
         <CorgiOfTheMonth />
         <HorizontalDivider />
@@ -106,3 +111,23 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query {
+    allSanityMember(sort: { position: ASC }) {
+      nodes {
+        _id
+        position
+        name
+        subtitle
+        imgAlt
+        link
+        photo {
+          asset {
+            url
+          }
+        }
+      }
+    }
+  }
+`;
