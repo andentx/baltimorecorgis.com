@@ -3,6 +3,10 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import { graphql } from 'gatsby';
+
+import { isAfter, isBefore } from 'date-fns';
+import { zonedTimeToUtc } from 'date-fns-tz';
+
 import { Link as GatsbyLink } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -13,8 +17,6 @@ import HorizontalDivider from '../components/HorizontalDivider';
 import CorgiOfTheMonth from '../components/CorgiOfTheMonth';
 import BestSellers from '../components/BestSellers';
 import EventsSection from '../components/EventsSection';
-
-import { nextThreeEvents } from '../data/events';
 
 export const Head = () => (
   <>
@@ -85,7 +87,15 @@ const ButtonInnerContent = styled.p`
 `;
 
 const IndexPage = ({ data }) => {
+  const timezone = 'America/New_York';
+  const now = zonedTimeToUtc(new Date(), timezone);
+
+  const allSanityEvents = data.allSanityEvent.nodes;
   const allSanityMembers = data.allSanityMember.nodes;
+
+  const upcomingEvents = allSanityEvents.filter((event) => isAfter(zonedTimeToUtc(new Date(event.endTime), timezone), now));
+
+  const nextThreeEvents = upcomingEvents.slice(0, 3);
 
   const members = allSanityMembers;
 
@@ -114,6 +124,30 @@ export default IndexPage;
 
 export const query = graphql`
   query {
+    allSanityEvent(sort: { startTime: ASC }) {
+      nodes {
+        _id
+        title
+        startTime
+        endTime
+        dateNumbers
+        monthAbbreviation
+        fullDate
+        eventTime
+        venue
+        city
+        state
+        admissionPrice
+        buttonText
+        eventImage {
+          asset {
+            url
+          }
+        }
+        eventUrl
+        eventImageAltText
+      }
+    }
     allSanityMember(sort: { position: ASC }) {
       nodes {
         _id
