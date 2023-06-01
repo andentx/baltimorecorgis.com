@@ -154,7 +154,7 @@ const Subtitle = styled.p`
   }
 `;
 
-const OurMembers = () => {
+const OurMembers = ({ members }) => {
   return (
     <>
       <SectionTitle>Meet some of our members...</SectionTitle>
