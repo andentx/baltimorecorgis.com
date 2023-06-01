@@ -1,10 +1,13 @@
 import * as React from 'react';
 
+import { graphql } from 'gatsby';
+
+import { isAfter, isBefore } from 'date-fns';
+import { zonedTimeToUtc } from 'date-fns-tz';
+
 import Layout from '../components/Layout';
 import VerticalSpacer from '../components/VerticalSpacer';
 import EventsSection from '../components/EventsSection';
-
-import { allEvents, upcomingEvents, pastEvents } from '../data/events';
 
 export const Head = () => (
   <>
@@ -26,7 +29,18 @@ export const Head = () => (
   </>
 );
 
-const EventsPage = () => {
+const EventsPage = ({ data }) => {
+  const timezone = 'America/New_York';
+  const now = zonedTimeToUtc(new Date(), timezone);
+
+  const allSanityEvents = data.allSanityEvent.nodes;
+
+  allSanityEvents.sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+
+  const upcomingEvents = allSanityEvents.filter((event) => isAfter(zonedTimeToUtc(new Date(event.endTime), timezone), now));
+
+  const pastEvents = allSanityEvents.filter((event) => isBefore(zonedTimeToUtc(new Date(event.endTime), timezone), now));
+
   return (
     <>
       <Layout>
@@ -39,3 +53,32 @@ const EventsPage = () => {
 };
 
 export default EventsPage;
+
+export const query = graphql`
+  query {
+    allSanityEvent {
+      nodes {
+        _id
+        title
+        startTime
+        endTime
+        dateNumbers
+        monthAbbreviation
+        fullDate
+        eventTime
+        venue
+        city
+        state
+        admissionPrice
+        buttonText
+        eventImage {
+          asset {
+            url
+          }
+        }
+        eventUrl
+        eventImageAltText
+      }
+    }
+  }
+`;
