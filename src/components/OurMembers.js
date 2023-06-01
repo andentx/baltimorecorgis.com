@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import { StaticImage } from 'gatsby-plugin-image';
-
 import styled from 'styled-components';
 
 import SectionTitle from './SectionTitle';
@@ -60,7 +58,7 @@ const GridCellLink = styled.a`
 
   transition: color 200ms;
 
-  div {
+  img {
     transition: opacity 200ms;
   }
 
@@ -75,7 +73,7 @@ const GridCellLink = styled.a`
   :hover {
     color: hsl(0, 0%, 70%);
 
-    div {
+    img {
       opacity: 0.8;
     }
   }
@@ -83,7 +81,7 @@ const GridCellLink = styled.a`
   :active {
     color: var(--text-color);
 
-    div {
+    img {
       opacity: 0.8;
     }
   }
@@ -103,7 +101,7 @@ const GridCell = styled.div`
   color: var(--text-color);
 `;
 
-const Photo = styled.div`
+const Photo = styled.img`
   /* background-color: yellow; */
 
   width: 90%;
@@ -117,26 +115,6 @@ const Photo = styled.div`
 
   margin-top: 5%;
   margin-bottom: 5%;
-
-  a {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  svg {
-    fill: var(--link-icon-color);
-
-    height: 75%;
-    width: 75%;
-  }
-
-  * {
-    border-radius: 10px;
-  }
 `;
 
 const Name = styled.h3`
@@ -288,23 +266,22 @@ const OurMembers = () => {
   return (
     <>
       <SectionTitle>Meet some of our members...</SectionTitle>
-
       <PhotoGrid>
-        {dogData.map((dog) => {
-          if (dog.url) {
+        {members.map((member) => {
+          if (member.link) {
             return (
-              <GridCellLink key={dog.id} href={dog.url}>
-                <Photo>{dog.photo}</Photo>
-                <Name>{dog.name}</Name>
-                <Subtitle>{dog.subtitle}</Subtitle>
+              <GridCellLink key={member._id} href={member.link}>
+                <Photo src={member.photo.asset.url} alt={member.imgAlt} />
+                <Name>{member.name}</Name>
+                <Subtitle>{member.subtitle}</Subtitle>
               </GridCellLink>
             );
           } else {
             return (
-              <GridCell key={dog.id}>
-                <Photo>{dog.photo}</Photo>
-                <Name>{dog.name}</Name>
-                <Subtitle>{dog.subtitle}</Subtitle>
+              <GridCell key={member._id}>
+                <Photo src={member.photo.asset.url} alt={member.imgAlt} />
+                <Name>{member.name}</Name>
+                <Subtitle>{member.subtitle}</Subtitle>
               </GridCell>
             );
           }
