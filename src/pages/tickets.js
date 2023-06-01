@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Layout from '../components/Layout';
-import SectionTitle from '../components/SectionTitle';
 import VerticalSpacer from '../components/VerticalSpacer';
 import TicketSection from '../components/TicketSection';
 
