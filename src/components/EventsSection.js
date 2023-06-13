@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { allEvents } from '../data/events';
+import { format, parseISO } from 'date-fns';
 
 import styled from 'styled-components';
 
@@ -55,16 +55,13 @@ const PhotoContainer = styled.div`
 
   flex-shrink: 0;
 
-  div:first-of-type {
+  img {
     border: 2px solid var(--baltimore-purple);
     border-radius: 10px;
-  }
+    border-radius: 8px;
 
-  * {
     height: 180px;
     width: 180px;
-
-    border-radius: 8px;
   }
 
   @media screen and (max-width: 800px) {
@@ -239,7 +236,6 @@ const ButtonPast = styled.div`
     padding: 1rem 2rem;
   }
 `;
-
 const EventsSection = ({ events, title }) => {
   return (
     <>
@@ -248,18 +244,18 @@ const EventsSection = ({ events, title }) => {
       <EventList>
         {events.map((event) => {
           return (
-            <EventContainer key={event.id}>
-              <PhotoContainer>{event.photo}</PhotoContainer>
+            <EventContainer key={event._id}>
+              <PhotoContainer>
+                <img src={event.eventImage.asset.url} alt={event.eventImageAltText} />
+              </PhotoContainer>
               <DateContainer>
-                <Day>{event.startTime.getDate().toString().padStart(2, '0')}</Day>
-                <Month>{event.startTime.toLocaleString('en-US', { month: 'short' })}</Month>
+                <Day>{event.dateNumbers}</Day>
+                <Month>{event.monthAbbreviation}</Month>
               </DateContainer>
               <InfoContainer>
                 <Title>{event.title}</Title>
-                <DateString>{event.startTime.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</DateString>
-                <Time>
-                  {event.startTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} - {event.endTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
-                </Time>
+                <DateString>{event.fullDate}</DateString>
+                <Time>{event.eventTime}</Time>
                 <Venue>{event.venue}</Venue>
                 <Location>
                   {event.city}, {event.state}
@@ -272,7 +268,7 @@ const EventsSection = ({ events, title }) => {
                     <p>ENDED</p>
                   </ButtonPast>
                 ) : (
-                  <ButtonUpcoming href={event.url}>
+                  <ButtonUpcoming href={event.eventUrl}>
                     <p>{event.buttonText}</p>
                   </ButtonUpcoming>
                 )}

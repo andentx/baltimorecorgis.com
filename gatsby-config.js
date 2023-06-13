@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Baltimore Corgis`,
@@ -9,12 +12,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
-    {
-      resolve: 'gatsby-plugin-sharp',
-      options: {
-        quality: 90,
-      },
-    },
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-sharp',
       options: {
@@ -28,6 +26,15 @@ module.exports = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        token: process.env.SANITY_TOKEN,
+        graphqlTag: 'default',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

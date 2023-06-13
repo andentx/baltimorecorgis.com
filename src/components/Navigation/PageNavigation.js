@@ -264,9 +264,13 @@ const PageNavigation = () => {
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <Link to={link.url} activeClassName='selected'>
-                {link.text}
-              </Link>
+              {link.url.startsWith('/') ? (
+                <Link to={link.url} activeClassName='selected'>
+                  {link.text}
+                </Link>
+              ) : (
+                <a href={link.url}>{link.text}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -282,9 +286,15 @@ const PageNavigation = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.id}>
-                <Link to={link.url} onClick={toggleMenu} activeClassName='selected' tabIndex={isOpen ? 0 : -1}>
-                  {link.text}
-                </Link>
+                {link.url.startsWith('/') ? (
+                  <Link to={link.url} onClick={toggleMenu} activeClassName='selected' tabIndex={isOpen ? 0 : -1}>
+                    {link.text}
+                  </Link>
+                ) : (
+                  <a href={link.url} onClick={toggleMenu} tabIndex={isOpen ? 0 : -1}>
+                    {link.text}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
