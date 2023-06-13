@@ -39,7 +39,7 @@ const EventsPage = ({ data }) => {
 
   const upcomingEvents = allSanityEvents.filter((event) => isAfter(zonedTimeToUtc(new Date(event.endTime), timezone), now));
 
-  const pastEvents = allSanityEvents.filter((event) => isBefore(zonedTimeToUtc(new Date(event.endTime), timezone), now));
+  const pastEvents = allSanityEvents.filter((event) => isBefore(zonedTimeToUtc(new Date(event.endTime), timezone), now)).reverse();
 
   return (
     <>
