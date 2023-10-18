@@ -81,10 +81,11 @@ In February 2023, I built the first version of the new Baltimore Corgis website,
 ### Easier future changes
 
 - Implemented consistent use of CSS variables for easier future changes
-- Implemented data arrays and objects instead of hard-coding
 - Using CSS instead of a drag-and-drop builder enables consistent changes across the site with singles lines of code
 - Website is able to import data from API's to reduce manual updates
 - Website is ready for third-party integrations for events, e-commerce, etc.
+- Implemented Sanity CMS to provide admin ability to update page content, events, etc. without touching code
+- Implemented build hook so Sanity updates will trigger site build and deploy - new content is live on the web in less than a minute
 
 <br />
 <br />
@@ -97,6 +98,7 @@ In February 2023, I built the first version of the new Baltimore Corgis website,
 - [Clamp Calc](https://clamp-calc.netlify.app/)
 - [GatsbyJS](https://www.gatsbyjs.com/)
 - [GitHub](https://github.com/)
+- [Sanity](https://www.sanity.io)
 - [Netlify](https://www.netlify.com/)
 
 <br />
