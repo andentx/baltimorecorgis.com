@@ -103,8 +103,8 @@ In February 2023, I built the first version of the new Baltimore Corgis website,
 
 ## What's Next
 
-- Adding a page for events
-- Adding a component with directions for purchasing tickets
+- ~~Adding a page for events~~
+- ~~Adding a component with directions for purchasing tickets~~
 - Update design
 
 <br />
