@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Layout from "../components/Layout";
 import VerticalSpacer from "../components/VerticalSpacer";
 import TicketSection from "../components/TicketSection";

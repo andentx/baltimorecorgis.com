@@ -1,11 +1,8 @@
 import * as React from "react";
-
 import styled from "styled-components";
 import SectionTitle from "./SectionTitle";
 
 const Container = styled.div`
-  /* background-color: red; */
-
   width: 90%;
   max-width: 1200px;
   display: flex;
@@ -20,14 +17,11 @@ const Container = styled.div`
 `;
 
 const AboutContainer = styled.div`
-  /* background-color: orange; */
-
   width: 100%;
 
   display: flex;
 `;
 const ImageContainer = styled.div`
-  /* background-color: yellow; */
   flex-grow: 0;
 
   svg {
@@ -40,8 +34,6 @@ const ImageContainer = styled.div`
   }
 `;
 const TextContainer = styled.div`
-  /* background-color: green; */
-
   font-family: "Montserrat Light";
 
   padding-left: 2rem;

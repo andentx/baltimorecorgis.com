@@ -1,9 +1,7 @@
 import * as React from "react";
-import Layout from "../components/Layout";
-
-import styled from "styled-components";
 import { Link } from "gatsby";
-
+import styled from "styled-components";
+import Layout from "../components/Layout";
 import SectionTitle from "../components/SectionTitle.js";
 
 export const Head = () => (

@@ -1,7 +1,5 @@
 import * as React from "react";
-
 import styled from "styled-components";
-
 import SectionTitle from "./SectionTitle";
 import VerticalSpacer from "./VerticalSpacer";
 

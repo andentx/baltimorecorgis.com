@@ -1,12 +1,8 @@
 import * as React from "react";
-
 import { StaticImage } from "gatsby-plugin-image";
-
 import styled from "styled-components";
 
 const HorizontalContainer = styled.div`
-  /* background-color: darkred; */
-
   width: 90%;
   max-width: 1100px;
 
@@ -20,8 +16,6 @@ const HorizontalContainer = styled.div`
 `;
 
 const TopFrame = styled.div`
-  /* border: 2px solid blue; */
-
   grid-column: 1;
   grid-row: 1;
 
@@ -48,8 +42,6 @@ const TopFrame = styled.div`
 `;
 
 const PhotoContainer = styled.div`
-  /* border: 2px solid hotpink; */
-
   width: 10rem;
 
   display: flex;
@@ -63,8 +55,6 @@ const PhotoContainer = styled.div`
 `;
 
 const BottomFrame = styled.div`
-  /* border: 2px solid yellow; */
-
   grid-column: 1;
   grid-row: 1;
 
@@ -98,7 +88,6 @@ const TextContainer = styled.div`
 `;
 
 const Text = styled.p`
-  /* background-color: yellow; */
   color: var(--off-white);
 
   text-align: center;
@@ -115,7 +104,6 @@ const Text = styled.p`
 `;
 
 const Button = styled.a`
-  /* background-color: red; */
   background: none;
 
   display: flex;
@@ -179,7 +167,6 @@ const VerticalContainer = styled.div`
 `;
 
 const VerticalPhotoContainer = styled.div`
-  /* background-color: orange; */
   width: 10rem;
 
   position: relative;

@@ -1,9 +1,5 @@
 import * as React from "react";
-
-import { format, parseISO } from "date-fns";
-
 import styled from "styled-components";
-
 import SectionTitle from "./SectionTitle";
 
 const EventList = styled.section`
@@ -70,8 +66,6 @@ const PhotoContainer = styled.div`
 `;
 
 const DateContainer = styled.div`
-  /* padding: 0 2rem; */
-
   width: 9rem;
 
   display: flex;

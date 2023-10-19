@@ -1,10 +1,7 @@
 import * as React from "react";
-
 import { graphql } from "gatsby";
-
 import { isAfter, isBefore } from "date-fns";
 import { zonedTimeToUtc } from "date-fns-tz";
-
 import Layout from "../components/Layout";
 import VerticalSpacer from "../components/VerticalSpacer";
 import EventsSection from "../components/EventsSection";

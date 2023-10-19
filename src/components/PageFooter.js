@@ -1,12 +1,9 @@
 import * as React from "react";
-
 import { Link as GatsbyLink } from "gatsby";
-
 import styled from "styled-components";
 
 const Footer = styled.footer`
   background-color: var(--page-footer-background-color);
-  /* background-color: red; */
   color: var(--text-color);
 
   border-top: 2px solid var(--off-white);
@@ -22,7 +19,6 @@ const Footer = styled.footer`
 `;
 
 const TopContainer = styled.div`
-  /* background-color: orange; */
   display: flex;
   justify-content: space-between;
 
@@ -44,7 +40,6 @@ const FooterSectionTitle = styled.h3`
 `;
 
 const ContactContainer = styled.div`
-  /* background-color: green; */
   width: 20rem;
 
   display: flex;
@@ -60,7 +55,6 @@ const ContactContainer = styled.div`
 `;
 
 const EmailLink = styled.a`
-  /* background-color: pink; */
   color: var(--off-white);
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -93,7 +87,6 @@ const EmailLink = styled.a`
 `;
 
 const LinksContainer = styled.div`
-  /* background-color: blue; */
   width: 20rem;
 
   display: flex;
@@ -109,7 +102,6 @@ const LinksContainer = styled.div`
 `;
 
 const SocialLinks = styled.div`
-  /* background-color: #222; */
   display: flex;
   justify-content: space-evenly;
   width: 85%;
@@ -136,8 +128,6 @@ const SocialLinks = styled.div`
 `;
 
 const Link1 = styled.a`
-  /* background-color: #444; */
-
   height: 5rem;
   width: 5rem;
 
@@ -183,8 +173,6 @@ const Link1 = styled.a`
   }
 `;
 const Link2 = styled.a`
-  /* background-color: #555; */
-
   height: 5rem;
   width: 5rem;
 
@@ -231,7 +219,6 @@ const Link2 = styled.a`
 `;
 
 const FooterLink = styled(GatsbyLink)`
-  /* background-color: red; */
   font-size: 1.2rem;
 
   color: var(--text-color);
@@ -272,9 +259,6 @@ const FooterLink = styled(GatsbyLink)`
 `;
 
 const BottomContainer = styled.div`
-  /* background-color: yellow; */
-  /* color: black; */
-
   display: flex;
   align-items: center;
   justify-content: center;

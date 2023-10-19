@@ -1,11 +1,6 @@
 import * as React from "react";
-
-import styled from "styled-components";
-
-import { createGlobalStyle } from "styled-components";
-
+import styled, { createGlobalStyle } from "styled-components";
 import Color from "../components/Color";
-
 import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 

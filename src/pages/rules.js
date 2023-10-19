@@ -1,11 +1,7 @@
 import * as React from "react";
-
 import styled from "styled-components";
-
 import Layout from "../components/Layout";
-
 import SectionTitle from "../components/SectionTitle";
-
 import VerticalSpacer from "../components/VerticalSpacer";
 
 export const Head = () => (
@@ -41,7 +37,6 @@ export const Head = () => (
 );
 
 const Rule = styled.div`
-  /* background-color: darkred; */
   color: var(--text-color);
 
   width: min(90%, 650px);
@@ -53,8 +48,6 @@ const Rule = styled.div`
 `;
 
 const NumberContainer = styled.div`
-  /* background-color: orange; */
-
   font-family: "Chunk Five";
 
   flex-shrink: 0;
@@ -71,22 +64,18 @@ const NumberContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
-  /* background-color: darkgoldenrod; */
-
   display: flex;
   flex-direction: column;
 
   padding-left: 20px;
 
   h3 {
-    /* background-color: lightgray; */
     font-size: clamp(0.9rem, 0.3rem + 3.2vw, 1.3rem);
     font-weight: 400;
     margin-bottom: 10px;
   }
 
   p {
-    /* background-color: grey; */
     font-size: clamp(0.8rem, 0.5rem + 1.6vw, 1rem);
     font-weight: 200;
     word-wrap: break-word;

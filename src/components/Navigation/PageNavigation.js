@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-
 import { Link } from "gatsby";
-
 import styled, { createGlobalStyle } from "styled-components";
-
 import { openIcon, closeIcon } from "./NavIcon.module.css";
 
 const Global = createGlobalStyle`

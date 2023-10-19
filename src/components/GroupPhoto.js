@@ -1,11 +1,8 @@
 import * as React from "react";
-
 import { StaticImage } from "gatsby-plugin-image";
-
 import styled from "styled-components";
 
 const GroupPhotoContainer = styled.div`
-  /* background-color: red; */
   margin-bottom: min(5vw, 3rem);
 `;
 

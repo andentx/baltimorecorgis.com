@@ -1,15 +1,9 @@
 import * as React from "react";
-
 import { StaticImage } from "gatsby-plugin-image";
-
+import styled from "styled-components";
 import SectionTitle from "./SectionTitle";
 
-import styled from "styled-components";
-
 const ProductGrid = styled.div`
-  /* background-color: var(--baltimore-purple); */
-  /* background-color: red; */
-
   width: 95%;
   max-width: 1500px;
 
@@ -29,8 +23,6 @@ const ProductGrid = styled.div`
 `;
 
 const GridCell = styled.a`
-  /* background-color: orange; */
-
   width: 100%;
 
   display: flex;
@@ -94,8 +86,6 @@ const GridCell = styled.a`
 `;
 
 const Photo = styled.div`
-  /* background-color: yellow; */
-
   width: 90%;
   aspect-ratio: 1/1;
 
@@ -120,8 +110,6 @@ const Photo = styled.div`
 `;
 
 const Name = styled.h3`
-  /* background-color: green; */
-
   text-align: center;
 
   width: 90%;
@@ -142,8 +130,6 @@ const Name = styled.h3`
 `;
 
 const Subtitle = styled.p`
-  /* background-color: blue; */
-
   text-align: center;
 
   font-style: italic;
@@ -168,7 +154,6 @@ const Subtitle = styled.p`
 `;
 
 const Button = styled.a`
-  /* background-color: red; */
   background: none;
 
   display: flex;

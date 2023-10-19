@@ -1,12 +1,8 @@
 import * as React from "react";
-
 import styled from "styled-components";
-
 import SectionTitle from "./SectionTitle";
 
 const PhotoGrid = styled.section`
-  /* background-color: red; */
-
   width: 95%;
   max-width: 1500px;
 
@@ -26,8 +22,6 @@ const PhotoGrid = styled.section`
 `;
 
 const GridCellLink = styled.a`
-  /* background-color: orange; */
-
   width: 100%;
 
   display: flex;
@@ -87,8 +81,6 @@ const GridCellLink = styled.a`
   }
 `;
 const GridCell = styled.div`
-  /* background-color: orange; */
-
   width: 100%;
 
   display: flex;
@@ -102,8 +94,6 @@ const GridCell = styled.div`
 `;
 
 const Photo = styled.img`
-  /* background-color: yellow; */
-
   width: 90%;
   aspect-ratio: 1/1;
 
@@ -118,14 +108,11 @@ const Photo = styled.img`
 `;
 
 const Name = styled.h3`
-  /* background-color: green; */
-
   text-align: center;
 
   width: 90%;
   max-height: 3.5rem;
 
-  /* font-size: 1.5rem; */
   font-size: clamp(1rem, 0.5rem + 2.67vw, 1.5rem);
 
   font-weight: 400;
@@ -134,8 +121,6 @@ const Name = styled.h3`
 `;
 
 const Subtitle = styled.p`
-  /* background-color: blue; */
-
   font-size: 1rem;
   font-family: "Montserrat Light";
 

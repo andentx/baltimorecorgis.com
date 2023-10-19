@@ -1,14 +1,9 @@
 import * as React from "react";
-
-import styled from "styled-components";
-
-import { graphql } from "gatsby";
-
-import { isAfter, isBefore } from "date-fns";
-import { zonedTimeToUtc } from "date-fns-tz";
-
 import { Link as GatsbyLink } from "gatsby";
-
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { isAfter } from "date-fns";
+import { zonedTimeToUtc } from "date-fns-tz";
 import Layout from "../components/Layout";
 import GroupPhoto from "../components/GroupPhoto";
 import AboutUs from "../components/AboutUs";
