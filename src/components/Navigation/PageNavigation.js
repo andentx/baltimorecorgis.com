@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
-import { openIcon, closeIcon } from './NavIcon.module.css';
+import { openIcon, closeIcon } from "./NavIcon.module.css";
 
 const Global = createGlobalStyle`
  @media screen and (max-width: 700px) {
      html,
      body {
-         max-height: ${({ isOpen }) => (isOpen ? '100vh' : 'none')};
-         overflow-y: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
+         max-height: ${({ isOpen }) => (isOpen ? "100vh" : "none")};
+         overflow-y: ${({ isOpen }) => (isOpen ? "hidden" : "auto")};
      }
  }
  `;
@@ -47,7 +47,7 @@ const DesktopNavigation = styled.nav`
         }
 
         :focus-visible::before {
-          content: '';
+          content: "";
           position: absolute;
           top: -2px;
           right: -2px;
@@ -98,7 +98,7 @@ const MobileNavigationMenuIcon = styled.button`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -127,7 +127,7 @@ const MobileNavigation = styled.div`
 
   transition: transform 300ms;
 
-  transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
+  transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
 
   @media screen and (min-width: 700px) {
     display: none;
@@ -182,7 +182,7 @@ const LinkPanel = styled.div`
     }
 
     :focus-visible::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -2px;
       right: -2px;
@@ -208,10 +208,12 @@ const PageNavigation = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const bodyElementsRef = useRef(null);
-  const bodyElementsSelectorRef = useRef('main *, #headerLogo, footer *');
+  const bodyElementsSelectorRef = useRef("main *, #headerLogo, footer *");
 
   useEffect(() => {
-    const bodyElements = document.querySelectorAll(bodyElementsSelectorRef.current);
+    const bodyElements = document.querySelectorAll(
+      bodyElementsSelectorRef.current
+    );
     bodyElementsRef.current = bodyElements;
   }, []);
 
@@ -220,9 +222,9 @@ const PageNavigation = () => {
       const bodyElements = bodyElementsRef.current;
       bodyElements.forEach((element) => {
         if (isOpen) {
-          element.setAttribute('tabindex', '-1');
+          element.setAttribute("tabindex", "-1");
         } else {
-          element.removeAttribute('tabindex');
+          element.removeAttribute("tabindex");
         }
       });
     }
@@ -231,28 +233,28 @@ const PageNavigation = () => {
   const navLinks = [
     {
       id: 1,
-      text: 'home',
-      url: '/',
+      text: "home",
+      url: "/",
     },
     {
       id: 2,
-      text: 'events',
-      url: '/events',
+      text: "events",
+      url: "/events",
     },
     {
       id: 3,
-      text: 'tickets',
-      url: '/tickets',
+      text: "tickets",
+      url: "/tickets",
     },
     {
       id: 4,
-      text: 'shop',
-      url: 'https://baltimore-corgis.creator-spring.com/',
+      text: "shop",
+      url: "https://baltimore-corgis.creator-spring.com/",
     },
     {
       id: 5,
-      text: 'contact',
-      url: '/#contact',
+      text: "contact",
+      url: "/#contact",
     },
   ];
 
@@ -264,8 +266,8 @@ const PageNavigation = () => {
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              {link.url.startsWith('/') ? (
-                <Link to={link.url} activeClassName='selected'>
+              {link.url.startsWith("/") ? (
+                <Link to={link.url} activeClassName="selected">
                   {link.text}
                 </Link>
               ) : (
@@ -276,7 +278,12 @@ const PageNavigation = () => {
         </ul>
       </DesktopNavigation>
 
-      <MobileNavigationMenuIcon onClick={toggleMenu} aria-label={`${isOpen ? 'close navigation menu' : 'open navigation menu'}`}>
+      <MobileNavigationMenuIcon
+        onClick={toggleMenu}
+        aria-label={`${
+          isOpen ? "close navigation menu" : "open navigation menu"
+        }`}
+      >
         <div className={`${isOpen ? closeIcon : openIcon}`}></div>
       </MobileNavigationMenuIcon>
 
@@ -286,12 +293,21 @@ const PageNavigation = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.id}>
-                {link.url.startsWith('/') ? (
-                  <Link to={link.url} onClick={toggleMenu} activeClassName='selected' tabIndex={isOpen ? 0 : -1}>
+                {link.url.startsWith("/") ? (
+                  <Link
+                    to={link.url}
+                    onClick={toggleMenu}
+                    activeClassName="selected"
+                    tabIndex={isOpen ? 0 : -1}
+                  >
                     {link.text}
                   </Link>
                 ) : (
-                  <a href={link.url} onClick={toggleMenu} tabIndex={isOpen ? 0 : -1}>
+                  <a
+                    href={link.url}
+                    onClick={toggleMenu}
+                    tabIndex={isOpen ? 0 : -1}
+                  >
                     {link.text}
                   </a>
                 )}

@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'Gill Sans Custom';
+  font-family: "Gill Sans Custom";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/GillSansCustom.woff2) format('woff2');
+  src: url(/fonts/GillSansCustom.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Montserrat Light';
+  font-family: "Montserrat Light";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(/fonts/MontserratLight.woff2) format('woff2');
+  src: url(/fonts/MontserratLight.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/MontserratRegular.woff2) format('woff2');
+  src: url(/fonts/MontserratRegular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Chunk Five';
+  font-family: "Chunk Five";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/ChunkFive.woff2) format('woff2');
+  src: url(/fonts/ChunkFive.woff2) format("woff2");
 }
 
 html {

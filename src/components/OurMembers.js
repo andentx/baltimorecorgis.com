@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import SectionTitle from './SectionTitle';
+import SectionTitle from "./SectionTitle";
 
 const PhotoGrid = styled.section`
   /* background-color: red; */
@@ -46,7 +46,7 @@ const GridCellLink = styled.a`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -137,7 +137,7 @@ const Subtitle = styled.p`
   /* background-color: blue; */
 
   font-size: 1rem;
-  font-family: 'Montserrat Light';
+  font-family: "Montserrat Light";
 
   text-align: center;
 

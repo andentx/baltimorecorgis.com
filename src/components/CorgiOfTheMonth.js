@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from "gatsby-plugin-image";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HorizontalContainer = styled.div`
   /* background-color: darkred; */
@@ -135,7 +135,7 @@ const Button = styled.a`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -192,13 +192,21 @@ const CorgiOfTheMonth = () => {
       <HorizontalContainer>
         <TopFrame>
           <PhotoContainer>
-            <StaticImage height={1125} width={602} src='../images/phone.png' alt='A mobile phone displaying The Baltimore Corgis Instagram page' placeholder='blurred' />
+            <StaticImage
+              height={1125}
+              width={602}
+              src="../images/phone.png"
+              alt="A mobile phone displaying The Baltimore Corgis Instagram page"
+              placeholder="blurred"
+            />
           </PhotoContainer>
         </TopFrame>
         <BottomFrame>
           <TextContainer>
-            <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
-            <Button href='https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform'>
+            <Text>
+              Do you want to be featured as Corgi of the Month on our Instagram?
+            </Text>
+            <Button href="https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform">
               <ButtonInnerContent>SIGN UP</ButtonInnerContent>
             </Button>
           </TextContainer>
@@ -207,11 +215,19 @@ const CorgiOfTheMonth = () => {
 
       <VerticalContainer>
         <VerticalPhotoContainer>
-          <StaticImage height={1125} width={602} src='../images/phone.png' alt='A mobile phone displaying The Baltimore Corgis Instagram page' placeholder='blurred' />
+          <StaticImage
+            height={1125}
+            width={602}
+            src="../images/phone.png"
+            alt="A mobile phone displaying The Baltimore Corgis Instagram page"
+            placeholder="blurred"
+          />
         </VerticalPhotoContainer>
         <TextContainer>
-          <Text>Do you want to be featured as Corgi of the Month on our Instagram?</Text>
-          <Button href='https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform'>
+          <Text>
+            Do you want to be featured as Corgi of the Month on our Instagram?
+          </Text>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLScuZM7H0AbcYEx2f4Nbyol46tobRUrzx5PXgQcy720ynd_RYw/viewform">
             <ButtonInnerContent>SIGN UP</ButtonInnerContent>
           </Button>
         </TextContainer>

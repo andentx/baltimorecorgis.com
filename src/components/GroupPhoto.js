@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from "gatsby-plugin-image";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const GroupPhotoContainer = styled.div`
   /* background-color: red; */
@@ -13,7 +13,11 @@ const GroupPhoto = () => {
   return (
     <>
       <GroupPhotoContainer>
-        <StaticImage src='../images/photos/group-photo-4000.png' alt='A photo of the Baltimore Corgi group at Bark Social in 2023' placeholder='none' />
+        <StaticImage
+          src="../images/photos/group-photo-4000.png"
+          alt="A photo of the Baltimore Corgi group at Bark Social in 2023"
+          placeholder="none"
+        />
       </GroupPhotoContainer>
     </>
   );

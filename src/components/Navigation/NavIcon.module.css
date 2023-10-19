@@ -1,7 +1,7 @@
 .open-icon::before {
   background-color: var(--nav-menu-open-icon-color);
 
-  content: '';
+  content: "";
 
   display: block;
 
@@ -22,7 +22,7 @@
 .open-icon::after {
   background-color: var(--nav-menu-open-icon-color);
 
-  content: '';
+  content: "";
 
   display: block;
 
@@ -45,7 +45,7 @@
 .close-icon::after {
   background-color: var(--nav-menu-close-icon-color);
 
-  content: '';
+  content: "";
 
   display: block;
 

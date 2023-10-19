@@ -1,13 +1,13 @@
-import * as React from 'react';
+import * as React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import Color from '../components/Color';
+import Color from "../components/Color";
 
-import PageHeader from '../components/PageHeader';
-import PageFooter from '../components/PageFooter';
+import PageHeader from "../components/PageHeader";
+import PageFooter from "../components/PageFooter";
 
 const GlobalReset = createGlobalStyle`
  html,
@@ -58,10 +58,10 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  font-family: 'Montserrat Regular';
+  font-family: "Montserrat Regular";
 
   h2 {
-    font-family: 'Gill Sans Custom';
+    font-family: "Gill Sans Custom";
   }
 `;
 

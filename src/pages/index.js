@@ -1,40 +1,52 @@
-import * as React from 'react';
+import * as React from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby";
 
-import { isAfter, isBefore } from 'date-fns';
-import { zonedTimeToUtc } from 'date-fns-tz';
+import { isAfter, isBefore } from "date-fns";
+import { zonedTimeToUtc } from "date-fns-tz";
 
-import { Link as GatsbyLink } from 'gatsby';
+import { Link as GatsbyLink } from "gatsby";
 
-import Layout from '../components/Layout';
-import GroupPhoto from '../components/GroupPhoto';
-import AboutUs from '../components/AboutUs';
-import OurMembers from '../components/OurMembers';
-import HorizontalDivider from '../components/HorizontalDivider';
-import CorgiOfTheMonth from '../components/CorgiOfTheMonth';
-import BestSellers from '../components/BestSellers';
-import EventsSection from '../components/EventsSection';
+import Layout from "../components/Layout";
+import GroupPhoto from "../components/GroupPhoto";
+import AboutUs from "../components/AboutUs";
+import OurMembers from "../components/OurMembers";
+import HorizontalDivider from "../components/HorizontalDivider";
+import CorgiOfTheMonth from "../components/CorgiOfTheMonth";
+import BestSellers from "../components/BestSellers";
+import EventsSection from "../components/EventsSection";
 
 export const Head = () => (
   <>
     <title>Baltimore Corgis</title>
-    <meta name='description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
-    <meta name='author' content='Andrew' />
+    <meta
+      name="description"
+      content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties."
+    />
+    <meta name="author" content="Andrew" />
 
-    <meta property='og:title' content='Baltimore Corgis' />
-    <meta property='og:description' content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties." />
-    <meta property='og:image' content='https://baltimorecorgis.com/images/og-image.png' />
-    <meta property='og:image:alt' content='A screenshot of the Baltimore Corgis website' />
-    <meta property='og:locale' content='en_US' />
-    <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://baltimorecorgis.com/' />
+    <meta property="og:title" content="Baltimore Corgis" />
+    <meta
+      property="og:description"
+      content="Established in 2014, we're a community of Corgi owners based in the Baltimore area and surrounding counties."
+    />
+    <meta
+      property="og:image"
+      content="https://baltimorecorgis.com/images/og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="A screenshot of the Baltimore Corgis website"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://baltimorecorgis.com/" />
 
-    <meta name='twitter:card' content='summary_large_image' />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name='theme-color' content='hsl(264, 36%, 31%)' />
+    <meta name="theme-color" content="hsl(264, 36%, 31%)" />
   </>
 );
 
@@ -56,7 +68,7 @@ const Button = styled(GatsbyLink)`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -87,13 +99,15 @@ const ButtonInnerContent = styled.p`
 `;
 
 const IndexPage = ({ data }) => {
-  const timezone = 'America/New_York';
+  const timezone = "America/New_York";
   const now = zonedTimeToUtc(new Date(), timezone);
 
   const allSanityEvents = data.allSanityEvent.nodes;
   const allSanityMembers = data.allSanityMember.nodes;
 
-  const upcomingEvents = allSanityEvents.filter((event) => isAfter(zonedTimeToUtc(new Date(event.endTime), timezone), now));
+  const upcomingEvents = allSanityEvents.filter((event) =>
+    isAfter(zonedTimeToUtc(new Date(event.endTime), timezone), now)
+  );
 
   const nextThreeEvents = upcomingEvents.slice(0, 3);
 
@@ -109,8 +123,8 @@ const IndexPage = ({ data }) => {
         <HorizontalDivider />
         <CorgiOfTheMonth />
         <HorizontalDivider />
-        <EventsSection events={nextThreeEvents} title='Upcoming Events' />
-        <Button to='/events'>
+        <EventsSection events={nextThreeEvents} title="Upcoming Events" />
+        <Button to="/events">
           <ButtonInnerContent>VIEW ALL EVENTS</ButtonInnerContent>
         </Button>
         <HorizontalDivider />

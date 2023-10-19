@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from "gatsby-plugin-image";
 
-import SectionTitle from './SectionTitle';
+import SectionTitle from "./SectionTitle";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ProductGrid = styled.div`
   /* background-color: var(--baltimore-purple); */
@@ -50,7 +50,7 @@ const GridCell = styled.a`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -148,7 +148,7 @@ const Subtitle = styled.p`
 
   font-style: italic;
 
-  font-family: 'Montserrat Light';
+  font-family: "Montserrat Light";
 
   width: 90%;
   padding: 0.5rem;
@@ -186,7 +186,7 @@ const Button = styled.a`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -219,40 +219,59 @@ const ButtonInnerContent = styled.p`
 const productData = [
   {
     id: 1,
-    name: 'BaltiMore Corgis (White Logo)',
-    subtitle: 'Classic Pullover Hoodie',
-    photo: <StaticImage src='../images/products/black-baltimore-corgis-hoodie.jpg' height={220} width={220} alt={`A black hoodie that has a white Baltimore Corgis logo.`} />,
-    url: 'https://baltimore-corgis.creator-spring.com/listing/baltimore-corgis-white?product=212',
+    name: "BaltiMore Corgis (White Logo)",
+    subtitle: "Classic Pullover Hoodie",
+    photo: (
+      <StaticImage
+        src="../images/products/black-baltimore-corgis-hoodie.jpg"
+        height={220}
+        width={220}
+        alt={`A black hoodie that has a white Baltimore Corgis logo.`}
+      />
+    ),
+    url: "https://baltimore-corgis.creator-spring.com/listing/baltimore-corgis-white?product=212",
   },
   {
     id: 2,
-    name: 'Maryland Flag Corgi',
-    subtitle: 'Die Cut Sticker',
+    name: "Maryland Flag Corgi",
+    subtitle: "Die Cut Sticker",
     photo: (
       <StaticImage
-        src='../images/products/baltimore-corgis-maryland-flag-sticker.jpg'
+        src="../images/products/baltimore-corgis-maryland-flag-sticker.jpg"
         height={220}
         width={220}
         alt={`A sticker in the shape of a corgi sitting down with the Maryland flag silhouette.`}
       />
     ),
-    url: 'https://baltimore-corgis.creator-spring.com/listing/maryland-flag-corgi?product=794',
+    url: "https://baltimore-corgis.creator-spring.com/listing/maryland-flag-corgi?product=794",
   },
   {
     id: 3,
-    name: 'Baltimore Cityscape Corgis (Day)',
-    subtitle: 'Classic Tank Top',
+    name: "Baltimore Cityscape Corgis (Day)",
+    subtitle: "Classic Tank Top",
     photo: (
-      <StaticImage src='../images/products/white-baltimore-corgis-tank-top-cityscape.jpg' height={220} width={220} alt={`A photo of white tank top with cartoon corgis and the Baltimore cityscape.`} />
+      <StaticImage
+        src="../images/products/white-baltimore-corgis-tank-top-cityscape.jpg"
+        height={220}
+        width={220}
+        alt={`A photo of white tank top with cartoon corgis and the Baltimore cityscape.`}
+      />
     ),
-    url: 'https://baltimore-corgis.creator-spring.com/listing/baltimore-cityscape-day?product=14',
+    url: "https://baltimore-corgis.creator-spring.com/listing/baltimore-cityscape-day?product=14",
   },
   {
     id: 4,
-    name: 'BaltiMore Corgis (White Logo)',
-    subtitle: 'Comfort Tee',
-    photo: <StaticImage src='../images/products/black-baltimore-corgis-tshirt.jpg' height={220} width={220} alt={`A photo of black tee shirt that has a white Baltimore Corgis logo.`} />,
-    url: 'https://baltimore-corgis.creator-spring.com/listing/baltimore-corgis-white?product=369',
+    name: "BaltiMore Corgis (White Logo)",
+    subtitle: "Comfort Tee",
+    photo: (
+      <StaticImage
+        src="../images/products/black-baltimore-corgis-tshirt.jpg"
+        height={220}
+        width={220}
+        alt={`A photo of black tee shirt that has a white Baltimore Corgis logo.`}
+      />
+    ),
+    url: "https://baltimore-corgis.creator-spring.com/listing/baltimore-corgis-white?product=369",
   },
 ];
 
@@ -271,7 +290,7 @@ const BestSellers = () => {
         ))}
       </ProductGrid>
 
-      <Button href='https://baltimore-corgis.creator-spring.com'>
+      <Button href="https://baltimore-corgis.creator-spring.com">
         <ButtonInnerContent>SHOP NOW</ButtonInnerContent>
       </Button>
     </>

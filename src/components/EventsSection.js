@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { format, parseISO } from 'date-fns';
+import { format, parseISO } from "date-fns";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import SectionTitle from './SectionTitle';
+import SectionTitle from "./SectionTitle";
 
 const EventList = styled.section`
   width: 100%;
@@ -36,8 +36,8 @@ const EventContainer = styled.div`
     grid-template-rows: 1fr 7rem;
     grid-auto-flow: row;
     grid-template-areas:
-      'date info info'
-      'button button button';
+      "date info info"
+      "button button button";
   }
   @media screen and (max-width: 800px) {
     grid-template-columns: 7rem 1fr;
@@ -89,7 +89,7 @@ const DateContainer = styled.div`
 const Day = styled.div`
   color: var(--baltimore-purple);
 
-  font-family: 'Chunk Five';
+  font-family: "Chunk Five";
   font-size: 4rem;
 
   text-align: center;
@@ -120,7 +120,7 @@ const InfoContainer = styled.div`
     font-size: 1rem;
     line-height: 1.3;
     margin-bottom: 0.5rem;
-    font-family: 'Montserrat Light';
+    font-family: "Montserrat Light";
   }
 
   p:last-of-type {
@@ -174,7 +174,7 @@ const ButtonUpcoming = styled.a`
   }
 
   :focus-visible::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     right: -2px;
@@ -203,7 +203,7 @@ const ButtonUpcoming = styled.a`
     transition: background-color 200ms;
   }
 
-  &[href]:not([href='']) p {
+  &[href]:not([href=""]) p {
     :hover {
       background-color: var(--baltimore-purple-lighter);
     }
@@ -246,7 +246,10 @@ const EventsSection = ({ events, title }) => {
           return (
             <EventContainer key={event._id}>
               <PhotoContainer>
-                <img src={event.eventImage.asset.url} alt={event.eventImageAltText} />
+                <img
+                  src={event.eventImage.asset.url}
+                  alt={event.eventImageAltText}
+                />
               </PhotoContainer>
               <DateContainer>
                 <Day>{event.dateNumbers}</Day>
@@ -263,7 +266,7 @@ const EventsSection = ({ events, title }) => {
                 <Admission>Admission: {event.admissionPrice}</Admission>
               </InfoContainer>
               <ButtonContainer>
-                {title === 'Past Events' ? (
+                {title === "Past Events" ? (
                   <ButtonPast>
                     <p>ENDED</p>
                   </ButtonPast>
