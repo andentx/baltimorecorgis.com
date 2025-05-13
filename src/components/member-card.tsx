@@ -56,7 +56,7 @@ export function MemberCard({
           256px
       "
       />
-      <h3 className="mb-2 text-center text-base sm:text-lg lg:text-3xl">
+      <h3 className="mb-2 text-center text-base sm:text-lg lg:text-2xl">
         {name}
       </h3>
       <h4 className="mb-4 text-center font-montserratLight text-sm italic text-neutral-200 lg:text-lg">
