@@ -23,8 +23,8 @@ export default function Home() {
     <>
       <section className="mb-16 w-full max-w-[2000px] lg:mb-24">
         <Image
-          src="https://res.cloudinary.com/dsz45zrla/image/upload/f_auto,q_auto,c_scale,w_2000/v1736887729/baltimore-corgis/group-photo-4000_kk3ljf.webp"
-          alt="A photo of the Baltimore Corgi group at Bark Social in 2023"
+          src="https://res.cloudinary.com/dsz45zrla/image/upload/f_auto,q_auto,c_scale,w_2000/v1747165279/IMG_8331_2_eix1ty.jpg"
+          alt="A photo of the Baltimore Corgi group at Zen Paw Ranch in 2025"
           sizes="(min-width: 2000px) 2000px, 100vw"
           width={2000}
           height={747}
