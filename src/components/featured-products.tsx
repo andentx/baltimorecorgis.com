@@ -18,7 +18,7 @@ export default async function FeaturedProducts() {
         ))}
       </div>
       <Link
-        href="https://baltimore-corgis.creator-spring.com/"
+        href="https://baltimore-corgis-shop.fourthwall.com"
         className="ui-button bg-baltimorePurple text-white hover:bg-baltimoreGold focus-visible:ring-yellow-300 focus-visible:ring-offset-8 focus-visible:ring-offset-neutral-950 active:bg-baltimoreGoldDarker"
       >
         View All Products
